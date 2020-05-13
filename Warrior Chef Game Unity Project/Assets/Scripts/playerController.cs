@@ -14,6 +14,10 @@ public class playerController : MonoBehaviour
 
     private float moveInput;
 
+    //public MeatStockCounter meatStockCounter;
+
+    //public Animator animator;
+
     public int meatStock = 0;
 
     //extra jumps? best options for upgrades?
@@ -44,6 +48,8 @@ public class playerController : MonoBehaviour
     public void GainMeatStock()
     {
         meatStock ++;
+
+        //meatStockCounter.SetMeatStock(meatStock);
     }
 
     //public void TakeDamage(int damage)
