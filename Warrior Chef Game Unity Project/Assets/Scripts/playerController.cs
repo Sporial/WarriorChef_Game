@@ -16,7 +16,7 @@ public class playerController : MonoBehaviour
 
     //public MeatStockCounter meatStockCounter;
 
-    //public Animator animator;
+    public Animator animator;
 
     public int meatStock = 0;
 
@@ -31,19 +31,35 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+       {
+           Attack();
+       }
+       
     }
 
     void FixedUpdate()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
         
         if(Input.GetKeyDown(KeyCode.W))
         {
-            rb.velocity = Vector2.up * jumpStrength;
+            Jump();
         }
     }
+
+    public void Attack()
+   {
+       animator.SetTrigger("Attack");
+   }
+
+   public void Jump()
+   {
+       rb.velocity = Vector2.up * jumpStrength;
+       animator.SetTrigger("Jump");
+   }
 
     public void GainMeatStock()
     {
@@ -51,6 +67,8 @@ public class playerController : MonoBehaviour
 
         //meatStockCounter.SetMeatStock(meatStock);
     }
+
+    //void consume meatstock() -meatstock +health
 
     //public void TakeDamage(int damage)
     //{
