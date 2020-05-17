@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7143e0d28622ff049892d9dd68c90194
+guid: 5b9b1eb7f9a367643a40e359f96b394f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
       y: 16
       width: 0
       height: 0
-    spriteID: 807478c6caa5acf4992d8123cde8aebb
+    spriteID: cc6d5e0236d928740a442b883d55e208
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -119,7 +119,7 @@ ScriptedImporter:
       y: 4
       width: 4
       height: 4
-    spriteID: 66be6e178882369488983e16f3edcab2
+    spriteID: 707487285b607134490233071bcac2c9
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -141,7 +141,7 @@ ScriptedImporter:
       y: 24
       width: 0
       height: 0
-    spriteID: 9ab559c2e902c6f45b7a716a6ad58155
+    spriteID: a73a0eba2ef703442a5fee18a49b6288
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -163,7 +163,7 @@ ScriptedImporter:
       y: 32
       width: 0
       height: 0
-    spriteID: 4523155e90f09ba4daa671715681c41a
+    spriteID: 1230962cd78147e4cb2056ca2e40f916
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -185,7 +185,7 @@ ScriptedImporter:
       y: 40
       width: 0
       height: 0
-    spriteID: 5f941ded51f5fb244a0577567e9ac096
+    spriteID: 9f3a938d40d4785438b3ae4a531e2fbd
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -207,7 +207,7 @@ ScriptedImporter:
       y: 48
       width: 0
       height: 0
-    spriteID: d97a5784139ccdd42a327767dc0978ae
+    spriteID: 53f17ea53b41e4d42add0142f2a26ac4
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -229,7 +229,7 @@ ScriptedImporter:
       y: 56
       width: 0
       height: 0
-    spriteID: c1430d2f25286b64fad3a081c88b77bc
+    spriteID: 84705959e65fc9143a27818cc4ab4ff8
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -251,7 +251,7 @@ ScriptedImporter:
       y: 64
       width: 0
       height: 0
-    spriteID: 04bc4ab9ce7c4d04494e2c799b4513a2
+    spriteID: 14ebb31feb5a2a645ad42c54a96c9477
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -273,7 +273,7 @@ ScriptedImporter:
       y: 72
       width: 0
       height: 0
-    spriteID: dac8665680eba504caccdaffe3c49f7d
+    spriteID: 464de54aa0582e54695d87193268a632
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -295,7 +295,7 @@ ScriptedImporter:
       y: 4
       width: 462
       height: 365
-    spriteID: 8c606d21aa814a443b26abe5b078035d
+    spriteID: 4a27c59155fe5114e93d0f64cb05a79b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -325,14 +325,14 @@ ScriptedImporter:
     spriteName: Left arm
     isGroup: 0
     parentIndex: -1
-    spriteID: 807478c6caa5acf4992d8123cde8aebb
+    spriteID: cc6d5e0236d928740a442b883d55e208
     layerID: 85
     mosaicPosition: {x: 474, y: 16}
   - name: Body
     spriteName: Body
     isGroup: 0
     parentIndex: -1
-    spriteID: 66be6e178882369488983e16f3edcab2
+    spriteID: 707487285b607134490233071bcac2c9
     layerID: 80
     mosaicPosition: {x: 474, y: 4}
   - name: Left Leg
@@ -346,21 +346,21 @@ ScriptedImporter:
     spriteName: Left leg foot
     isGroup: 0
     parentIndex: 2
-    spriteID: 9ab559c2e902c6f45b7a716a6ad58155
+    spriteID: a73a0eba2ef703442a5fee18a49b6288
     layerID: 90
     mosaicPosition: {x: 474, y: 24}
   - name: Left leg bottom
     spriteName: Left leg bottom
     isGroup: 0
     parentIndex: 2
-    spriteID: 4523155e90f09ba4daa671715681c41a
+    spriteID: 1230962cd78147e4cb2056ca2e40f916
     layerID: 89
     mosaicPosition: {x: 474, y: 32}
   - name: Left leg top
     spriteName: Left leg top
     isGroup: 0
     parentIndex: 2
-    spriteID: 5f941ded51f5fb244a0577567e9ac096
+    spriteID: 9f3a938d40d4785438b3ae4a531e2fbd
     layerID: 88
     mosaicPosition: {x: 474, y: 40}
   - name: Right Leg
@@ -374,35 +374,35 @@ ScriptedImporter:
     spriteName: Right leg top
     isGroup: 0
     parentIndex: 6
-    spriteID: d97a5784139ccdd42a327767dc0978ae
+    spriteID: 53f17ea53b41e4d42add0142f2a26ac4
     layerID: 94
     mosaicPosition: {x: 474, y: 48}
   - name: Right leg bottom
     spriteName: Right leg bottom
     isGroup: 0
     parentIndex: 6
-    spriteID: c1430d2f25286b64fad3a081c88b77bc
+    spriteID: 84705959e65fc9143a27818cc4ab4ff8
     layerID: 95
     mosaicPosition: {x: 474, y: 56}
   - name: Right leg foot
     spriteName: Right leg foot
     isGroup: 0
     parentIndex: 6
-    spriteID: 04bc4ab9ce7c4d04494e2c799b4513a2
+    spriteID: 14ebb31feb5a2a645ad42c54a96c9477
     layerID: 96
     mosaicPosition: {x: 474, y: 64}
   - name: Right arm
     spriteName: Right arm
     isGroup: 0
     parentIndex: -1
-    spriteID: dac8665680eba504caccdaffe3c49f7d
+    spriteID: 464de54aa0582e54695d87193268a632
     layerID: 86
     mosaicPosition: {x: 474, y: 72}
   - name: Diagonal body
     spriteName: Diagonal body
     isGroup: 0
     parentIndex: -1
-    spriteID: 8c606d21aa814a443b26abe5b078035d
+    spriteID: 4a27c59155fe5114e93d0f64cb05a79b
     layerID: 77
     mosaicPosition: {x: 4, y: 4}
   characterData:
@@ -411,5 +411,5 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
   boneGOs: []
   generateGOHierarchy: 0
-  textureAssetName: Frog_Burger-Paused_stance
-  prefabAssetName: Frog_Burger-Paused_stance_GO
+  textureAssetName: Frog_Burger-Paused_stance Texture
+  prefabAssetName: Frog_Burger-Paused_stance Prefab
