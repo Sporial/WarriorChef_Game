@@ -27,11 +27,11 @@ public class enemyController : MonoBehaviour
         //float xVel = vel.x;
         //animator.SetFloat("Speed", Mathf.Abs(xVel));
         transform.LookAt(target.position);
-         transform.Rotate(new Vector3(0,-90,0),Space.Self);
+         transform.Rotate(new Vector3(0,90,0),Space.Self);
         //move towards the player
          if (Vector3.Distance(transform.position, target.position) >= minDistance)
          {  
-            transform.Translate(new Vector3(speed * Time.deltaTime,0,0) );
+            transform.Translate(new Vector3(-1 * speed * Time.deltaTime,0,0) );
             animator.SetFloat("Speed", Mathf.Abs(speed * Time.deltaTime));
          }    
             //shoots toward player every so often
