@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class weaponScript : MonoBehaviour
 {
-    public int damage = 10;
+    public int damage = 1;
     // Start is called before the first frame update
     void Start()
     {

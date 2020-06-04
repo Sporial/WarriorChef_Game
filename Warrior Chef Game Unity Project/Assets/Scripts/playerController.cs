@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    public int health = 100;
+    public int maxHealth = 3;
+    public int currentHealth;
 
     public float speed = 1;
 
@@ -14,11 +15,14 @@ public class playerController : MonoBehaviour
 
     private float moveInput;
 
-    //public MeatStockCounter meatStockCounter;
+    public meatStockUI meatStockCounter;
 
     public Animator animator;
 
+    public healthScript hearts;
+
     public int meatStock = 0;
+    public int upgradeToken = 0;
 
     //extra jumps? best options for upgrades?
 
@@ -26,6 +30,9 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        hearts.SetMaxHealth(maxHealth);
+        meatStockCounter.SetMeatStock(meatStock);
     }
 
     // Update is called once per frame
@@ -65,7 +72,26 @@ public class playerController : MonoBehaviour
     {
         meatStock ++;
 
-        //meatStockCounter.SetMeatStock(meatStock);
+        meatStockCounter.SetMeatStock(meatStock);
+    }
+
+    public void LoseMeatStock()
+    {
+        meatStock --;
+
+        meatStockCounter.SetMeatStock(meatStock);
+    }
+
+    public void GainToken()
+    {
+        upgradeToken ++;
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        hearts.SetHealth(currentHealth);
     }
 
     //void consume meatstock() -meatstock +health
