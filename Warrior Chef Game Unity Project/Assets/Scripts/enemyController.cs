@@ -17,6 +17,9 @@ public class enemyController : MonoBehaviour
 
     public Animator animator;
 
+    public GameObject meatDrop;
+    private Vector3 dropPos;
+
     public playerController player;
     public Transform target;
     public float maxDistance = 1f;
@@ -33,6 +36,7 @@ public class enemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = baseSpeed;
         alive = true;
+        dropPos = new Vector3(0f, 0.7f, 0f);
     }
 
     void FixedUpdate()
@@ -86,6 +90,7 @@ public class enemyController : MonoBehaviour
     IEnumerator DeathWait()
     {
         yield return new WaitForSeconds(1f);
+        Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
         Destroy(gameObject);
     }
     
@@ -98,12 +103,11 @@ public class enemyController : MonoBehaviour
         if (health <= 0 && alive)
         {
             //tell player to get meatstock
-            FindObjectOfType<playerController>().GainMeatStock();
+            //FindObjectOfType<playerController>().GainMeatStock();
             animator.SetTrigger("Death");
             alive = false;
-            StartCoroutine(DeathWait());
             
-
+            StartCoroutine(DeathWait());
         }
         currentSpeed = 0f;
         animator.SetTrigger("Damaged");

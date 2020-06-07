@@ -118,6 +118,7 @@ public class playerController : MonoBehaviour
        animator.SetTrigger("Jump");
    }
 
+
     public void GainMeatStock()
     {
         meatStock ++;
