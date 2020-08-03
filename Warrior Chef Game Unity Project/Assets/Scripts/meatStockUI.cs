@@ -7,7 +7,7 @@ public class meatStockUI : MonoBehaviour
 {
 
     public Text meatStockText;
-
+    //manages the current meat stock of the player
     
     public void SetMeatStock(int meatStock)
     {

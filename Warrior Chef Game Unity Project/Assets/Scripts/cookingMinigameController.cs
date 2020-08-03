@@ -18,6 +18,7 @@ public class cookingMinigameController : MonoBehaviour
 
     public Slider slider;
 
+    //standin 'animations' of the player character on the screen
     public GameObject cookingIdle;
     public GameObject cookingAction;
     public GameObject cookingFail;
@@ -47,6 +48,7 @@ public class cookingMinigameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //the cooking minigame is an overlay, rather than a new scene, this makes sure the overlay doesn't start on etc.
         cookingMinigame.SetActive(false);
         upgradeMenu.SetActive(false);
         postGameMenu.SetActive(false);
@@ -62,6 +64,7 @@ public class cookingMinigameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {    
+        //if the player is cooking, checks whether they cooked the meat succesfully or not
         if (Input.GetKeyDown(KeyCode.C) && player.meatStock > 0 && isCooking == true)
         {
             CookMeal();
@@ -69,21 +72,27 @@ public class cookingMinigameController : MonoBehaviour
             cookingIdle.SetActive(false);
             if(player.meatStock <= 0)
             {
+                //if nothing left to cook, can progress to upgrades menu
                 upgradeMenuButton.SetActive(true);
             }
         }
     }
 
+
     void FixedUpdate()
     {
+        //makes the cooking slider go back and forth
         slider.value = Mathf.Sin(Time.time * xFrequency) * xMagnitude;
     }
 
     public void CookMeal()
     {
         //this is scuffed as, but it does the job for now -- collisions on the sliders seemed borked :(
+        //instead, we manually take the value on the slider of the area we want to be the goal and add these values,
+        //could probably reverse engineer this to get the slider to project/generate its own goal area
         if(slider.value > -0.3 && slider.value < 0.3)
         {
+            //swaps the player sprite out for success, cooks an upgrade token, and resets animation
             cookingFail.SetActive(false);
             cookingAction.SetActive(false);
             cookingSuccess.SetActive(true);
@@ -93,6 +102,7 @@ public class cookingMinigameController : MonoBehaviour
         }
         else
         {
+            //player failure sprite and resets
             cookingSuccess.SetActive(false);
             cookingAction.SetActive(false);
             cookingFail.SetActive(true);
@@ -107,7 +117,8 @@ public class cookingMinigameController : MonoBehaviour
         yield return new WaitForSeconds(1);
         CookingDefault();
     }
-
+    
+    //used by the upgrade menu to manage it's upgrade numbers. makes upgrades consume tokens to increase, give tokens back to decrease
     public void AddHealth()
     {
         if(player.upgradeToken > 0)
@@ -149,6 +160,7 @@ public class cookingMinigameController : MonoBehaviour
         }
     }
 
+    //updates the respective UI numbers
     public void SetTokenNum(int tokenNum)
     {
         currentTokenNumber.text = tokenNum.ToString();
@@ -164,6 +176,7 @@ public class cookingMinigameController : MonoBehaviour
         currentDamageNumber.text = damageNum.ToString();
     }
 
+    //default cooking sprite returned to after cooking a meat succesfully or failing to etc.
     void CookingDefault()
     {
         cookingIdle.SetActive(false);
@@ -172,6 +185,7 @@ public class cookingMinigameController : MonoBehaviour
         cookingSuccess.SetActive(false);
     }
 
+    //this is when the cooking minigame is active
     public void YesChef()
     {
         
@@ -187,6 +201,7 @@ public class cookingMinigameController : MonoBehaviour
         StartCoroutine(Wait());  
     }
 
+    //this is when the upgrade system is active
     public void UpgradeChef()
     {
         upgradeMenu.SetActive(true);
@@ -200,6 +215,7 @@ public class cookingMinigameController : MonoBehaviour
         SetDamageNum(damageUpCount);
     }
 
+    //post mission menu
     public void ContinueMenu()
     {
         player.UpgradeHealthBy(healthUpCount);

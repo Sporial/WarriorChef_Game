@@ -6,6 +6,8 @@ public class animTester : MonoBehaviour
 {
    public Animator animator;
 
+   //this just exists to test animations
+
    void Update()
    {
        if (Input.GetMouseButtonDown(0))

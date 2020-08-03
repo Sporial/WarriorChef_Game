@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    //multiple health variables for base health and maintaining additional upgrade health
     public int baseHealth = 3;
     static public int upgradeHealth = 0;
     public int maxHealth;
     public int currentHealth;
+    
 
     public float speed = 1;
 
     public float jumpStrength = 1;
 
+    //all for checking if the player is on the ground eg. double jump status or airial attack status
     private bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
@@ -57,6 +60,8 @@ public class playerController : MonoBehaviour
        {
            Attack();
        }
+
+       //detects whether the player is touching the ground, if they are, they have their double jump refreshed
        if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
@@ -71,6 +76,7 @@ public class playerController : MonoBehaviour
             Jump();
         }
 
+        //allows the player to consume meat to regain health
         if(Input.GetKeyDown(KeyCode.F) && maxHealth > currentHealth && meatStock > 0)
         {
             ConsumeMeatStock();
@@ -80,14 +86,16 @@ public class playerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //checking if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
+        //controls player movements and movement animations
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         
         
-        
+        //flips player based on direction of movement
         if(facingRight == false && moveInput > 0)
         {
             Flip();
@@ -118,7 +126,7 @@ public class playerController : MonoBehaviour
        animator.SetTrigger("Jump");
    }
 
-
+    //all updates to UI and/or storing new values
     public void GainMeatStock()
     {
         meatStock ++;
@@ -169,7 +177,7 @@ public class playerController : MonoBehaviour
             //pauses game and activates failstate/death ui
             deathMenuUI.SetActive(true);
             Time.timeScale = 0f;
-            //Destroy(gameObject);
+            //Destroy(gameObject); 
         }
     }
 

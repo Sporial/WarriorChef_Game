@@ -23,6 +23,8 @@ public class mainMenuScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    //may want a 'ContinueGame()' option, otherwise LoadGame() may suffice.
+
     public void Options()
     {
         optionsMenu.SetActive(true);
@@ -48,6 +50,7 @@ public class mainMenuScript : MonoBehaviour
     }
 
     //public void LoadGame()
+    //needs to load all player data, as well as what scene they need etc. specific buildIndex??
 
     public void QuitGame()
     {

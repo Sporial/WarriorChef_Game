@@ -5,11 +5,8 @@ using UnityEngine;
 public class cookingDetectorScript : MonoBehaviour
 {
     public cookingTargetScript cookingTarget;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    //originally intended to detect whether the slider cursor was within the area for a successful cooking phase. Currently unused for a cheesy deception in cookingMinigameController
 
     // Update is called once per frame
     void Update()

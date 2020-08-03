@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -10490,6 +10491,10 @@ ScriptedImporter:
   importedTextureWidth: 2048
   importedTextureHeight: 2048
   documentSize: {x: 1500, y: 1135}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
   textureActualWidth: 2048
   textureActualHeight: 2048
   spritePackingTag: 
@@ -10736,6 +10741,8 @@ ScriptedImporter:
         height: 405
       spriteId: d1b2d15d5c89ca04099b2753dcef8d55
       bones: 0400000003000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 303
         y: 556
@@ -10743,6 +10750,8 @@ ScriptedImporter:
         height: 475
       spriteId: a5e3631473725d643b8e209215d90c91
       bones: 03000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 982
         y: 116
@@ -10750,6 +10759,8 @@ ScriptedImporter:
         height: 175
       spriteId: d5a7b5be24dbf6c47b43654e1e49c73c
       bones: 07000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 918
         y: 244
@@ -10757,6 +10768,8 @@ ScriptedImporter:
         height: 487
       spriteId: d026f571ebd7f3d4ea454f514b064507
       bones: 000000000700000006000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 918
         y: 387
@@ -10764,6 +10777,8 @@ ScriptedImporter:
         height: 344
       spriteId: 1b4a412e195859a428d6989cb82a34b6
       bones: 070000000600000005000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 693
         y: 124
@@ -10771,6 +10786,8 @@ ScriptedImporter:
         height: 136
       spriteId: 9ff039562db28424a8cd1987576c72af
       bones: 09000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 651
         y: 226
@@ -10778,6 +10795,8 @@ ScriptedImporter:
         height: 226
       spriteId: 22afe0c380c5d774f9889f3c53617cb3
       bones: 0800000009000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 651
         y: 326
@@ -10785,6 +10804,8 @@ ScriptedImporter:
         height: 252
       spriteId: 7b26f754892ac434f93cd520a0f4186c
       bones: 0900000008000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 182
         y: 245
@@ -10792,6 +10813,8 @@ ScriptedImporter:
         height: 659
       spriteId: 61ea7d46acc05ba4883509e50ec20b59
       bones: 00000000010000000200000003000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 898
         y: 126
@@ -10799,6 +10822,8 @@ ScriptedImporter:
         height: 172
       spriteId: a20c9a8e2cc3f9d4d97a88f470ca46a9
       bones: 0e000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 834
         y: 252
@@ -10806,6 +10831,8 @@ ScriptedImporter:
         height: 479
       spriteId: abc583442d81c77488c51f00c5f2f39e
       bones: 00000000050000000e000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 834
         y: 393
@@ -10813,6 +10840,8 @@ ScriptedImporter:
         height: 338
       spriteId: 794b9a5c5a41343478b95ef63a2899ac
       bones: 0d0000000c000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 618
         y: 132
@@ -10820,6 +10849,8 @@ ScriptedImporter:
         height: 134
       spriteId: 0f65cda0ddd26864eb31b2f4a1080c96
       bones: 0b000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 576
         y: 232
@@ -10827,6 +10858,8 @@ ScriptedImporter:
         height: 222
       spriteId: 06c8ae481c1c3c64c87c058b474d77fc
       bones: 0a0000000b000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 603
         y: 330
@@ -10834,6 +10867,8 @@ ScriptedImporter:
         height: 248
       spriteId: 01ab6208d19b90c4dbcacf9a3ef498af
       bones: 0b0000000a000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 1144
         y: 564
@@ -10841,6 +10876,8 @@ ScriptedImporter:
         height: 190
       spriteId: fc79b865d678e2c4a958cb590e391ef6
       bones: 00000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 1147
         y: 334
@@ -10848,38 +10885,12 @@ ScriptedImporter:
         height: 279
       spriteId: f78952df83ce66445ab277fbd4df4887
       bones: 00000000
+      parentGroup: 0
+      order: 0
     dimension: {x: 0, y: 0}
-  boneGOs:
-  - go: {fileID: -2496214331413847746, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 0
-  - go: {fileID: 4916517479999158456, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 1
-  - go: {fileID: -7402061040256969641, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 2
-  - go: {fileID: -311940504936580501, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 3
-  - go: {fileID: 8533429733881453803, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 4
-  - go: {fileID: 6726580015725858317, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 5
-  - go: {fileID: 5696540585593354388, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 6
-  - go: {fileID: -3007265971066971674, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 7
-  - go: {fileID: 7385937860776576456, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 8
-  - go: {fileID: 4445054169182941073, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 9
-  - go: {fileID: 7721212134482852992, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 10
-  - go: {fileID: -3070400312419633367, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 11
-  - go: {fileID: -8952105893842072338, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 12
-  - go: {fileID: -6992791424733883143, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 13
-  - go: {fileID: -2968278088055742779, guid: f2c9f8e586870f34db0a3385056b6389, type: 3}
-    index: 14
+    characterGroups: []
   generateGOHierarchy: 0
   textureAssetName: Prawn_bull Texture
   prefabAssetName: Prawn_bull Prefab
+  spriteLibAssetName: Prawn_bull Sprite Lib
+  secondarySpriteTextures: []

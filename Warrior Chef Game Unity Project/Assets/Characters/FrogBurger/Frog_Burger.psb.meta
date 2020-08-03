@@ -61,6 +61,7 @@ ScriptedImporter:
     maxTextureSizeSet: 0
     compressionQualitySet: 0
     textureFormatSet: 0
+    applyGammaDecoding: 0
   spriteImportData:
   - name: 
     originalName: 
@@ -4108,6 +4109,10 @@ ScriptedImporter:
   importedTextureWidth: 512
   importedTextureHeight: 1024
   documentSize: {x: 606, y: 618}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
   textureActualWidth: 512
   textureActualHeight: 1024
   spritePackingTag: 
@@ -4259,6 +4264,8 @@ ScriptedImporter:
         height: 108
       spriteId: e5a505ed5fc30af41a3b80539764e8c3
       bones: 08000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 118
         y: 141
@@ -4266,6 +4273,8 @@ ScriptedImporter:
         height: 328
       spriteId: 925e9c6cc1f3b834abfe4225ac547585
       bones: 0000000001000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 370
         y: 122
@@ -4273,6 +4282,8 @@ ScriptedImporter:
         height: 74
       spriteId: b3f7206b4a3c83a4d872b124c4dbe052
       bones: 0400000003000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 376
         y: 171
@@ -4280,6 +4291,8 @@ ScriptedImporter:
         height: 204
       spriteId: a7a25ed0e4d00e94e8a5cbc4ed0168ac
       bones: 03000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 370
         y: 254
@@ -4287,6 +4300,8 @@ ScriptedImporter:
         height: 143
       spriteId: 0ab10ccb97d6dc64792933fe0904b803
       bones: 02000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 124
         y: 233
@@ -4294,6 +4309,8 @@ ScriptedImporter:
         height: 160
       spriteId: b8afcbffc53563542b42399349bf258f
       bones: 05000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 123
         y: 163
@@ -4301,6 +4318,8 @@ ScriptedImporter:
         height: 214
       spriteId: 47a1e1d5b2e5b924b8c44cb6db669919
       bones: 06000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 106
         y: 123
@@ -4308,6 +4327,8 @@ ScriptedImporter:
         height: 71
       spriteId: 0eb620c265af4454f8b5d64c575cc207
       bones: 07000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 178
         y: 125
@@ -4315,6 +4336,8 @@ ScriptedImporter:
         height: 113
       spriteId: 243d12039edd32d40a4d205a67e10fdb
       bones: 09000000
+      parentGroup: 0
+      order: 0
     - spritePosition:
         x: 606
         y: 618
@@ -4322,28 +4345,12 @@ ScriptedImporter:
         height: 0
       spriteId: 8521100274e7df14d8b0835bc1a90e91
       bones: 
+      parentGroup: 0
+      order: 0
     dimension: {x: 0, y: 0}
-  boneGOs:
-  - go: {fileID: 7482800553770033564, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 0
-  - go: {fileID: -3396266927331632789, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 1
-  - go: {fileID: 1213333865785746124, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 2
-  - go: {fileID: 8516402148659623899, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 3
-  - go: {fileID: -2122663937314950679, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 4
-  - go: {fileID: -6165061577632706193, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 5
-  - go: {fileID: 3814528411178252902, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 6
-  - go: {fileID: -4895879141330282726, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 7
-  - go: {fileID: -3204458935070346625, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 8
-  - go: {fileID: -4587477329438068735, guid: a9b0a7d075aeb81488a1437f7ee83f74, type: 3}
-    index: 9
+    characterGroups: []
   generateGOHierarchy: 0
   textureAssetName: Frog_Burger Texture
   prefabAssetName: Frog_Burger Prefab
+  spriteLibAssetName: Frog_Burger Sprite Lib
+  secondarySpriteTextures: []

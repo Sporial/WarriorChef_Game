@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SinMotionScript : MonoBehaviour
 {
+    //test code for moving an objects position back and forth around a curve, experiment for cooking slider to be a 'curve'
+
     public float xMovespeed = 1;
     public float yMovespeed = 1;
     public float xFrequency = 1;

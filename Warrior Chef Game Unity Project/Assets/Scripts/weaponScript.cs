@@ -13,12 +13,7 @@ public class weaponScript : MonoBehaviour
         UpdateDamage();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //updates the amount of damage the player's weapon will do, used by the cookingMinigameController to add damage
     public void UpdateDamage()
     {
         totalDamage = baseDamage + upgradeDamage;
@@ -30,6 +25,8 @@ public class weaponScript : MonoBehaviour
         UpdateDamage();
     }
 
+
+    //detects if hit an enemy, and tells the enemyController how much damage to take
      void OnTriggerEnter2D(Collider2D hitInfo)
      {
          enemyController enemy = hitInfo.GetComponent<enemyController>();

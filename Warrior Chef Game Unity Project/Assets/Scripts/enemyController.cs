@@ -8,6 +8,7 @@ public class enemyController : MonoBehaviour
 
     public int damage = 1;
 
+    //basically to test whether the enemy is alive to attack vs wanting to play a death anim etc.
     private bool alive;
 
     public float baseSpeed = 1f;
@@ -17,15 +18,18 @@ public class enemyController : MonoBehaviour
 
     public Animator animator;
 
+    //used for dropping the meat the player picks up
     public GameObject meatDrop;
     private Vector3 dropPos;
 
+    //all to for finding the player and moving/attacking toward them
     public playerController player;
     public Transform target;
     public float maxDistance = 1f;
     public float minDistance = 1f;
     public float attackRange = 1f;
 
+    //allows for attack cooldowns, basically so they can't spam their attacks
     public float attackDelay = 2f;
     private float attackCooldown;
     
@@ -36,6 +40,7 @@ public class enemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = baseSpeed;
         alive = true;
+        //for meatdrop
         dropPos = new Vector3(0f, 0.7f, 0f);
     }
 
@@ -76,6 +81,7 @@ public class enemyController : MonoBehaviour
        
    }
 
+    //all for waiting between other events
     IEnumerator AttackWait()
     {
         yield return new WaitForSeconds(1f);
@@ -103,12 +109,13 @@ public class enemyController : MonoBehaviour
         if (health <= 0 && alive)
         {
             //tell player to get meatstock
-            //FindObjectOfType<playerController>().GainMeatStock();
+            //FindObjectOfType<playerController>().GainMeatStock(); -depreciated, now drops meat which when touched does the same thing.
             animator.SetTrigger("Death");
             alive = false;
-            
+            //waits to die, no longer alive, so only death aniamtion plays until destroyed
             StartCoroutine(DeathWait());
         }
+        //allows the player to 'stun' the enemy, returns to normal behaviour after DamagedWait()
         currentSpeed = 0f;
         animator.SetTrigger("Damaged");
         StartCoroutine(DamagedWait());
