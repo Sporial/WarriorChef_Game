@@ -5,12 +5,13 @@ using UnityEngine;
 public class ParallaxScrolling : MonoBehaviour
 {
     private float length, startPos;
-    public GameObject Cam;
+    public Camera Cam;
     public float parallaxEffect;
     void Start()
     {
         startPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
+        Cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     void Update()

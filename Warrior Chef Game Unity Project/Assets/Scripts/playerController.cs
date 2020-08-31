@@ -44,6 +44,8 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         UpdateHealth();

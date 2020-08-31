@@ -11,7 +11,7 @@ public class LevelGenTest : MonoBehaviour
     public GameObject startingPrefab;
     public GameObject[] tilePrefabs;
     public GameObject cookingPrefab;
-    new SpriteRenderer startPos;
+    SpriteRenderer startPos;
     Vector3 startcollSize;
     
 

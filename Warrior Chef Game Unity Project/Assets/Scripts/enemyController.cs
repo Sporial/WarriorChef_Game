@@ -36,6 +36,9 @@ public class enemyController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
         attackCooldown = attackDelay;
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = baseSpeed;
