@@ -48,6 +48,8 @@ public class cookingMinigameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+
         //the cooking minigame is an overlay, rather than a new scene, this makes sure the overlay doesn't start on etc.
         cookingMinigame.SetActive(false);
         upgradeMenu.SetActive(false);
@@ -63,14 +65,18 @@ public class cookingMinigameController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {    
+    {
         //if the player is cooking, checks whether they cooked the meat succesfully or not
-        if (Input.GetKeyDown(KeyCode.C) && player.meatStock > 0 && isCooking == true)
+        if (player.meatStock >= 0 && isCooking == true)
         {
-            CookMeal();
-            player.LoseMeatStock();
-            cookingIdle.SetActive(false);
-            if(player.meatStock <= 0)
+            if (Input.GetKeyDown(KeyCode.C) && player.meatStock >=1)
+            {
+                CookMeal();
+                player.LoseMeatStock();
+                cookingIdle.SetActive(false);
+                
+            }
+            if (player.meatStock <= 0)
             {
                 //if nothing left to cook, can progress to upgrades menu
                 upgradeMenuButton.SetActive(true);
@@ -220,7 +226,7 @@ public class cookingMinigameController : MonoBehaviour
     {
         player.UpgradeHealthBy(healthUpCount);
         weapon.UpgradeDamageBy(damageUpCount);
-        postGameMenu.SetActive(true);
+        //postGameMenu.SetActive(true);
         upgradeMenu.SetActive(false);
         cookingMinigame.SetActive(false);
         isCooking = false;

@@ -8,8 +8,7 @@ public class SaveController : MonoBehaviour
 
     public void NewGame()
     {
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
         
     }
 
@@ -56,6 +55,9 @@ public class SaveController : MonoBehaviour
         pCon.meatStock = data.meatStock;
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;
-        
+
+        //Go to town
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
+
     }
 }

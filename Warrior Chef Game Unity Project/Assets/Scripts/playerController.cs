@@ -44,20 +44,23 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+       hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+       meatStockCounter = GameObject.Find("MeatStock Counter").GetComponent<meatStockUI>();
 
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         UpdateHealth();
         currentHealth = maxHealth;
         hearts.SetMaxHealth(maxHealth);
-        meatStockCounter.SetMeatStock(meatStock);
+        //meatStockCounter.SetMeatStock(meatStock);
         deathMenuUI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        meatStockCounter.SetMeatStock(meatStock);
+
         if (Input.GetMouseButtonDown(0))
        {
            Attack();
