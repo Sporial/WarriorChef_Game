@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class cookingMinigameController : MonoBehaviour
 {
+    static cookingMinigameController instance;
 
     public GameObject cookingMinigame;
 
@@ -16,13 +17,14 @@ public class cookingMinigameController : MonoBehaviour
     public playerController player;
     public weaponScript weapon;
 
-    public Slider slider;
+    public Image slider;
 
     //standin 'animations' of the player character on the screen
     public GameObject cookingIdle;
     public GameObject cookingAction;
     public GameObject cookingFail;
     public GameObject cookingSuccess;
+    public GameObject cookingCursor;
 
     public GameObject upgradeMenuButton;
 
@@ -41,9 +43,18 @@ public class cookingMinigameController : MonoBehaviour
     
     public static bool isCooking = false;
 
-
-    
-
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -69,7 +80,7 @@ public class cookingMinigameController : MonoBehaviour
         //if the player is cooking, checks whether they cooked the meat succesfully or not
         if (player.meatStock >= 0 && isCooking == true)
         {
-            if (Input.GetKeyDown(KeyCode.C) && player.meatStock >=1)
+            if ((Input.GetKeyDown(KeyCode.C)|| Input.GetKeyDown(KeyCode.Space)) && player.meatStock >=1 && cookingCursor.activeSelf == true)
             {
                 CookMeal();
                 player.LoseMeatStock();
@@ -84,24 +95,18 @@ public class cookingMinigameController : MonoBehaviour
         }
     }
 
-
-    void FixedUpdate()
-    {
-        //makes the cooking slider go back and forth
-        slider.value = Mathf.Sin(Time.time * xFrequency) * xMagnitude;
-    }
-
     public void CookMeal()
     {
         //this is scuffed as, but it does the job for now -- collisions on the sliders seemed borked :(
         //instead, we manually take the value on the slider of the area we want to be the goal and add these values,
         //could probably reverse engineer this to get the slider to project/generate its own goal area
-        if(slider.value > -0.3 && slider.value < 0.3)
+        if(GameObject.Find("SlideCursor").GetComponent<MoveMinigameSlider>().CheckIfIntersects())
         {
             //swaps the player sprite out for success, cooks an upgrade token, and resets animation
             cookingFail.SetActive(false);
             cookingAction.SetActive(false);
             cookingSuccess.SetActive(true);
+            cookingCursor.SetActive(false);
             cookingTarget.CookUpgrade();
             StartCoroutine(Wait());
             player.GainToken();
@@ -189,6 +194,7 @@ public class cookingMinigameController : MonoBehaviour
         cookingAction.SetActive(true);
         cookingFail.SetActive(false);
         cookingSuccess.SetActive(false);
+        cookingCursor.SetActive(true);
     }
 
     //this is when the cooking minigame is active

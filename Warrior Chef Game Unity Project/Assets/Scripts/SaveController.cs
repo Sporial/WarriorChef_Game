@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveController : MonoBehaviour
 {
-
+    GameObject player;
     public void NewGame()
     {
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
@@ -23,7 +23,12 @@ public class SaveController : MonoBehaviour
 
     private void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        player.GetComponent<Rigidbody2D>().angularVelocity = 0;
+
+        if (SceneManager.GetActiveScene().buildIndex == 1)
             //Level 1
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -51,7 +56,7 @@ public class SaveController : MonoBehaviour
         PlayerData data = SaveSystem.LoadPlayer();
         playerController pCon = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         GameObject gO = GameObject.FindGameObjectWithTag("Player");
-        Debug.Log(data.meatStock);
+        //Debug.Log(data.meatStock);
         pCon.meatStock = data.meatStock;
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;

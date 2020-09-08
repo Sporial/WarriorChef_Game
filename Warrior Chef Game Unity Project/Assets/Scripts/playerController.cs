@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    static playerController instance;
     //multiple health variables for base health and maintaining additional upgrade health
     public int baseHealth = 3;
     static public int upgradeHealth = 0;
@@ -40,6 +41,19 @@ public class playerController : MonoBehaviour
     public int upgradeToken = 0;
 
     private bool facingRight = true;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance!= this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
