@@ -1,18 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-public class CookingButton : MonoBehaviour
+public class TOWNToMapButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(2);
-
-        //GameObject.Find("PlayerUI");
-        //GameObject.Find("PlayerUI").GetComponent<cookingMinigameController>().YesChef();
     }
 }

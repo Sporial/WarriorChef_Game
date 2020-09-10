@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    static playerController instance;
     //multiple health variables for base health and maintaining additional upgrade health
     public int baseHealth = 3;
     static public int upgradeHealth = 0;
@@ -41,23 +42,39 @@ public class playerController : MonoBehaviour
 
     private bool facingRight = true;
 
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance!= this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-       // hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+       hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+       meatStockCounter = GameObject.Find("MeatStock Counter").GetComponent<meatStockUI>();
 
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         UpdateHealth();
         currentHealth = maxHealth;
         hearts.SetMaxHealth(maxHealth);
-        meatStockCounter.SetMeatStock(meatStock);
+        //meatStockCounter.SetMeatStock(meatStock);
         deathMenuUI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        meatStockCounter.SetMeatStock(meatStock);
+
         if (Input.GetMouseButtonDown(0))
        {
            Attack();

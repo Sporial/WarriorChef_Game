@@ -2,26 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class FadeControls : MonoBehaviour
 {
-    public Image black;
-    public Animator anim;
-    //define level to load on LevelController in scene
-    public 
-        int index;
+    public Animator animator;
+    private int levelToLoad;
 
-    //Call with StartCoroutine(Fade())
-
-    public void StartFade()
+    private void Update()
     {
-        StartCoroutine(Fade());
+        
     }
-    public IEnumerator Fade()
+    public void FadeToLevel(int levelIndex)
     {
-        anim.SetBool("Fade", true);
-        yield return new WaitUntil(() => black.color.a == 1);
-        SceneManager.LoadScene(index);
+        levelToLoad = levelIndex;
+        animator.SetTrigger("FadeOut");
+    }
+
+    public void OnFadeComplete()
+    {
+        SceneManager.LoadScene(levelToLoad);
     }
 }
