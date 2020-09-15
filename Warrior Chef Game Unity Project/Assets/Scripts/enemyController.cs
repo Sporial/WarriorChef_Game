@@ -22,12 +22,24 @@ public class enemyController : MonoBehaviour
     public GameObject meatDrop;
     private Vector3 dropPos;
 
+    public Transform groundDetection;
+    private Vector3 groundDirection;
+    public float groundDetectionDistance;
+
     //all to for finding the player and moving/attacking toward them
     public playerController player;
     public Transform target;
+    public bool isFlipped = false;
+    private bool facingRight = false;
+    public int facingRightNum = -1;
+
     public float maxDistance = 1f;
     public float minDistance = 1f;
     public float attackRange = 1f;
+
+    public float losDistance;
+    private int patrolWait;
+    
 
     //allows for attack cooldowns, basically so they can't spam their attacks
     public float attackDelay = 2f;
@@ -39,12 +51,16 @@ public class enemyController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
+        Physics2D.queriesStartInColliders = false;
+
         attackCooldown = attackDelay;
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = baseSpeed;
         alive = true;
         //for meatdrop
         dropPos = new Vector3(0f, 0.7f, 0f);
+        //groundDetection = new Vector3(-0.25f, 0.1f, 0f);
+        groundDirection = new Vector3(-0.25f, 0f, 0f);
     }
 
     void FixedUpdate()
@@ -53,23 +69,92 @@ public class enemyController : MonoBehaviour
         {
             attackCooldown -= Time.deltaTime;
         }
+
+        //they ray cast to detect if the player is within line of sight of the enemy
+        RaycastHit2D losInfo = Physics2D.Raycast(transform.position + dropPos, transform.right * facingRightNum, losDistance);
+        if (losInfo.collider !=null)
+        {
+            
+
+            if (losInfo.collider.CompareTag("Player"))
+            {
+                Debug.DrawLine(transform.position + dropPos, losInfo.point, Color.red);
+                animator.SetBool("isAlerted", true);
+            }
+            else
+            {
+                Debug.DrawLine(transform.position + dropPos, losInfo.point, Color.blue);
+            }
+
+        }
+        else
+        {
+            Debug.DrawLine(transform.position + dropPos, transform.position + dropPos + transform.right * losDistance * facingRightNum, Color.green);
+        }
+
+        //rays to detect whether there is ground to walk on, and if there is an enemy or wall in fron of them *make sure to tage tiles "Ground" and enemies "Enemy"
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, transform.up * -1, groundDetectionDistance);
+        Debug.DrawLine(groundDetection.position, groundDetection.position + transform.up * -1 * groundDetectionDistance, Color.yellow);
+        RaycastHit2D infrontInfo = Physics2D.Raycast(groundDetection.position + transform.up * 0.3f, transform.up * 0.3f + transform.right * facingRightNum, groundDetectionDistance * 2f);
+        Debug.DrawLine(groundDetection.position + transform.up * 0.3f, groundDetection.position + transform.up * 0.3f + transform.right * facingRightNum * groundDetectionDistance * 2f, Color.yellow);
+        if (groundInfo.collider == false)
+        {
+            Flip();
+        }
+        if (infrontInfo.collider != null)
+        {
+            if (infrontInfo.collider.CompareTag("Enemy") || infrontInfo.collider.CompareTag("Ground"))
+            {
+                Flip();
+            }
+        }
         //Vector2 vel = rb.velocity;
         //float xVel = vel.x;
         //animator.SetFloat("Speed", Mathf.Abs(xVel));
-        transform.LookAt(target.position);
-         transform.Rotate(new Vector3(0,90,0),Space.Self);
+        
+        
+        //transform.LookAt(target.position);
+         //transform.Rotate(new Vector3(0,90,0),Space.Self);
         //move towards the player
-         if (Vector3.Distance(transform.position, target.position) >= minDistance && alive)
-         {  
-            transform.Translate(new Vector3(-1 * currentSpeed * Time.deltaTime,0,0) );
-            animator.SetFloat("Speed", Mathf.Abs(currentSpeed * Time.deltaTime));
-         }    
+         //if (Vector3.Distance(transform.position, target.position) >= minDistance && alive)
+         //{  
+           // transform.Translate(new Vector3(-1 * currentSpeed * Time.deltaTime,0,0) );
+            //animator.SetFloat("Speed", Mathf.Abs(currentSpeed * Time.deltaTime));
+         //}    
             //attack toward player every so often
             if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive)
             {  
                 Attack();
                 attackCooldown = attackDelay;
             }
+    }
+
+    //using a similar script to the playerController -most of the work is done by the 'followBehaviour' statemachine
+    public void LookAtPlayer()
+    {
+        //Vector3 flipped = transform.localScale;
+        //flipped.z *= -1f;
+
+        if (transform.position.x > target.position.x && facingRight)
+        {
+            Flip();
+        }
+        else if (transform.position.x < target.position.x && !facingRight)
+        {
+            Flip();
+        }
+
+
+    }
+
+    public void Flip()
+    {
+        //to flip sprite to face movement
+        facingRight = !facingRight;
+        facingRightNum *= -1;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 
      public void Attack()
@@ -103,6 +188,39 @@ public class enemyController : MonoBehaviour
         Destroy(gameObject);
     }
     
+    //these are so that the statmachines can run the coroutines to swap between idling and wandering, as state machines apparently can't StartCoroutine()s
+    public void RunPatrolWait()
+    {
+        StartCoroutine(PatrolWait());
+    }
+    public void RunIdleWait()
+    {
+        StartCoroutine(IdleWait());
+    }
+    public void RunFlipWait()
+    {
+        StartCoroutine(FlipWait());
+    }
+
+    //these are basically just a random duration for the AI to perform each of their behaviours.
+    IEnumerator PatrolWait()
+    {
+        patrolWait = Random.Range(5,15);
+        yield return new WaitForSeconds(patrolWait);
+        animator.SetBool("Idle", true);
+    } 
+    IEnumerator IdleWait()
+    {
+        patrolWait = Random.Range(2,5);
+        yield return new WaitForSeconds(patrolWait);
+        animator.SetBool("Idle", false);
+    }
+    IEnumerator FlipWait()
+    {
+        patrolWait = Random.Range(2,15);
+        yield return new WaitForSeconds(patrolWait);
+        Flip();
+    }
 
     //what to do when I take damage
     public void TakeDamage(int damage)

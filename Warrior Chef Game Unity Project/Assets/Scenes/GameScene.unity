@@ -697,6 +697,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89969385}
   m_CullTransparentMesh: 0
+--- !u!1 &91991160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91991161}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91991161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91991160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1067146613}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &112897786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112897787}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112897787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112897786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 568565348}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148534038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1831,7 @@ GameObject:
   - component: {fileID: 188350509}
   m_Layer: 8
   m_Name: tile3_front
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3163,11 +3223,16 @@ MonoBehaviour:
   animator: {fileID: 327217658}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 593642921}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &327217658
 Animator:
@@ -3235,6 +3300,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &327217661 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1211970946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349129454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,6 +3810,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -63.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &413313464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413313465}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413313465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413313464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1764302396}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &415435765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4463,11 +4564,16 @@ MonoBehaviour:
   animator: {fileID: 568565345}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 112897787}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &568565345
 Animator:
@@ -4535,6 +4641,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &568565348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1437622793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &572789695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +4882,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &593642920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593642921}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593642921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593642920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 327217661}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607447697
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,11 +5185,16 @@ MonoBehaviour:
   animator: {fileID: 644781162}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1816752026}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &644781162
 Animator:
@@ -5115,6 +5262,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &644781165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 755241888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &665836858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5838,11 +5991,16 @@ MonoBehaviour:
   animator: {fileID: 776898899}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 852212079}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &776898899
 Animator:
@@ -5910,6 +6068,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &776898902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 415435765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &823089568
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,7 +6169,7 @@ GameObject:
   - component: {fileID: 823507693}
   m_Layer: 8
   m_Name: tile5_front
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6737,6 +6901,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844174258}
   m_CullTransparentMesh: 0
+--- !u!1 &852212078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852212079}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &852212079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852212078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 776898902}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869257375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7540,7 +7734,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 2.4419782}
@@ -7590,7 +7784,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954192298}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -7608,6 +7802,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 3.047163, y: 1.6670586}
+  m_EdgeRadius: 0
+--- !u!61 &954192305
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954192298}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 4.471651}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 8.7136}
   m_EdgeRadius: 0
 --- !u!1 &962461348
 GameObject:
@@ -8098,11 +8318,16 @@ MonoBehaviour:
   animator: {fileID: 1067146610}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 91991161}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1067146610
 Animator:
@@ -8170,6 +8395,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &1067146613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 719111868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1104133941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8926,11 +9157,12 @@ MonoBehaviour:
   postGameMenu: {fileID: 914994091}
   player: {fileID: 954192299}
   weapon: {fileID: 1507963430}
-  slider: {fileID: 2039543117}
+  slider: {fileID: 0}
   cookingIdle: {fileID: 1946555899}
   cookingAction: {fileID: 703996286}
   cookingFail: {fileID: 938136979}
   cookingSuccess: {fileID: 400101244}
+  cookingCursor: {fileID: 0}
   upgradeMenuButton: {fileID: 403425529}
   currentTokenNumber: {fileID: 361273487}
   currentHealthNumber: {fileID: 924180927}
@@ -9136,11 +9368,16 @@ MonoBehaviour:
   animator: {fileID: 1293907749}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1812265327}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1293907749
 Animator:
@@ -9208,6 +9445,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &1293907752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 188512034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1330860742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9856,7 +10099,7 @@ GameObject:
   - component: {fileID: 1427798032}
   m_Layer: 8
   m_Name: spawntile_front
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11907,11 +12150,16 @@ MonoBehaviour:
   animator: {fileID: 1764302395}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 413313465}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!50 &1764302393
 Rigidbody2D:
@@ -11979,6 +12227,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1764302396 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 2041612939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791300496
 GameObject:
   m_ObjectHideFlags: 0
@@ -12147,6 +12401,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801233978}
   m_CullTransparentMesh: 0
+--- !u!1 &1812265326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1812265327}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1812265327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812265326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1293907752}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1816752025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816752026}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816752026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816752025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 644781165}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824347723
 GameObject:
   m_ObjectHideFlags: 0
@@ -12277,6 +12591,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824347723}
   m_CullTransparentMesh: 0
+--- !u!1 &1850418733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1850418734}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1850418734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850418733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1984208307}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900750124
 GameObject:
   m_ObjectHideFlags: 0
@@ -13082,11 +13426,16 @@ MonoBehaviour:
   animator: {fileID: 1984208304}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1850418734}
+  groundDetectionDistance: 0.25
   player: {fileID: 954192299}
   target: {fileID: 954192303}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1984208304
 Animator:
@@ -13154,6 +13503,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!4 &1984208307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1922331610}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2019222298
 GameObject:
   m_ObjectHideFlags: 0
@@ -13557,7 +13912,7 @@ GameObject:
   - component: {fileID: 2127082375}
   m_Layer: 8
   m_Name: tile4_front
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

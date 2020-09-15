@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2124807078239374963}
   m_Layer: 8
   m_Name: tile4_front
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
