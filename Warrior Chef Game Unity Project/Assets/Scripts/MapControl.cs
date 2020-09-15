@@ -9,7 +9,8 @@ public class MapControl : MonoBehaviour
 
     public void Start()
     {
-        CheckLevelUnlocked(1);
+        playerController pCon = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        CheckLevelUnlocked(pCon.curLevelUnlocked);
     }
     public void CheckLevelUnlocked(int curLevel)
     {
@@ -23,22 +24,42 @@ public class MapControl : MonoBehaviour
         icon2.GetComponent<Button>().enabled = true;
         icon3.GetComponent<Button>().enabled = true;
 
-        if (curLevel ==1)
+        if (curLevel <=1)
         {
             icon3.GetComponent<Image>().color = new Color32(85, 85, 85, 255);
             connect2.GetComponent<Image>().color = new Color32(85, 85, 85, 255);
             icon3.GetComponent<Button>().enabled = false;
+        }
+        if (curLevel == 2)
+        {
+            icon3.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            connect2.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            icon3.GetComponent<Button>().enabled = true;
         }
     }
 
     public void TownButton()
     {
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
+        playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        if(player.curLevelUnlocked!=1 && player.curLevelUnlocked < 2) { player.curLevelUnlocked = 1; }
+        Debug.Log(player.curLevelUnlocked);
     }
 
     public void Level1Button()
     {
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
+    }
+    public void Level2Button()
+    {
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(4);
+        playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        player.curLevelUnlocked = 2;
+    }
+
+    public void Level3Button()
+    {
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(5);
     }
 
 }

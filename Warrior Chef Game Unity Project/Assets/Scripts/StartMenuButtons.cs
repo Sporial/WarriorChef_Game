@@ -9,6 +9,7 @@ public class StartMenuButtons : MonoBehaviour
     SaveController saveControl;
     Button newGame;
     Button loadGame;
+    public GameObject noLoadAvailable;
     void Start()
     {
         //This script has to be done because of returning to menu. Otherwise buttons would be unassigned.
@@ -28,5 +29,23 @@ public class StartMenuButtons : MonoBehaviour
     {
         saveControl = GameObject.Find("SceneManager").GetComponent<SaveController>();
         saveControl.LoadPlayer();
+        playerController pCon = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        Debug.Log(pCon.curLevelUnlocked);
+        if (pCon.curLevelUnlocked < 1)
+        {
+            noLoadAvailable.SetActive(true);
+            StartCoroutine(Wait());
+        }
+        else
+        {
+            GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
+        }
+
+        
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        noLoadAvailable.SetActive(false);
     }
 }

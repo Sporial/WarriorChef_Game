@@ -17,6 +17,7 @@ public class PlayerData
         meatStock = player.meatStock;
         upgradeToken = player.upgradeToken;
         maxHealth = player.maxHealth;
+        mapLevel = player.curLevelUnlocked;
         xPos = (int)player.transform.position.x;
         yPos = (int)player.transform.position.y;
     }

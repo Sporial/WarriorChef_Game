@@ -52,7 +52,8 @@ public class pauseMenuUIScript : MonoBehaviour
     {
         //needs to be fixed to account for more levels - worsk for prototype
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        pauseMenuUI.SetActive(false);
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()

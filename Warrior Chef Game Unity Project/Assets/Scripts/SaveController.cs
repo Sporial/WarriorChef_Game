@@ -36,6 +36,21 @@ public class SaveController : MonoBehaviour
             playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
         }
 
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        //Level2
+        {
+            Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
+            playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        //Level3
+        {
+            Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
+            playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+        }
+
         if (SceneManager.GetActiveScene().buildIndex == 3)
         //Town
         {
@@ -60,9 +75,6 @@ public class SaveController : MonoBehaviour
         pCon.meatStock = data.meatStock;
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;
-
-        //Go to town
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
-
+        pCon.curLevelUnlocked = data.mapLevel;      
     }
 }

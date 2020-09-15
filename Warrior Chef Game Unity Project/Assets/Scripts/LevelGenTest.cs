@@ -25,15 +25,20 @@ public class LevelGenTest : MonoBehaviour
         startcollSize = startPos.bounds.size;
 
         int randInst;
+        int prevRandInst = -1;
 
         for(int i=1;i <tileList.Length;i++)
         {
             //get Random tile. Change this so it doesn't repeat
+            
             randInst = GetRandom();
-
+            while(prevRandInst == randInst)
+            {
+                randInst = GetRandom();
+            }
             //Pain
             tileList[i] = Instantiate(tilePrefabs[randInst], new Vector2(GetTile(i - 1).bounds.center.x + GetTile(i - 1).bounds.size.x / 2 + tilePrefabs[randInst].GetComponent<SpriteRenderer>().bounds.size.x / 2, GetTile(i - 1).transform.position.y),Quaternion.identity);
-
+            prevRandInst = randInst;
         }
         Instantiate(cookingPrefab, new Vector2(GetTile(tileList.Length-1).bounds.center.x + GetTile(tileList.Length-1).bounds.size.x / 2 + cookingPrefab.GetComponent<SpriteRenderer>().bounds.size.x / 2, GetTile(tileList.Length-1).transform.position.y), Quaternion.identity);
         

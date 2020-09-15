@@ -10,7 +10,7 @@ public class playerController : MonoBehaviour
     static public int upgradeHealth = 0;
     public int maxHealth;
     public int currentHealth;
-    
+    public int curLevelUnlocked=0;
 
     public float speed = 1;
 
