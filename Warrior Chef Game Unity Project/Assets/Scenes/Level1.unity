@@ -246,6 +246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -324,6 +329,42 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &188512035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 188512034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &194823560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194823561}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194823561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194823560}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1437622794}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311881444
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,11 +518,16 @@ MonoBehaviour:
   animator: {fileID: 327217658}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1880289801}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &327217658
 Animator:
@@ -866,11 +912,16 @@ MonoBehaviour:
   animator: {fileID: 568565345}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 194823561}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &568565345
 Animator:
@@ -963,11 +1014,16 @@ MonoBehaviour:
   animator: {fileID: 644781162}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1433098993}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &644781162
 Animator:
@@ -1047,6 +1103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -1125,6 +1186,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &719111869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 719111868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &755241888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1136,6 +1203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -1215,6 +1287,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &755241889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 755241888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &785659087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,6 +1322,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &868877336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868877337}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868877337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868877336}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 188512035}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869257375
 GameObject:
@@ -1529,11 +1637,16 @@ MonoBehaviour:
   animator: {fileID: 1067146610}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1959182292}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1067146610
 Animator:
@@ -2008,6 +2121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -2086,6 +2204,42 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &1211970947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1211970946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1216740061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216740062}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216740062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216740061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1922331611}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293907747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
@@ -2111,11 +2265,16 @@ MonoBehaviour:
   animator: {fileID: 1293907749}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 868877337}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1293907749
 Animator:
@@ -2377,6 +2536,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   parallaxEffect: 0
+--- !u!1 &1433098992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433098993}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433098993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433098992}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 755241889}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1437622793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2388,6 +2577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -2467,6 +2661,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &1437622794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1437622793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1457307777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2921,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 468fdd7e9f7430e4bb10e1733a596425, type: 3}
+--- !u!1 &1880289800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880289801}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1880289801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880289800}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 1211970947}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1922331610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2732,6 +2962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -2811,6 +3046,42 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1776147641775907167, guid: f2c9f8e586870f34db0a3385056b6389,
     type: 3}
+--- !u!4 &1922331611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1545132697547797826, guid: f2c9f8e586870f34db0a3385056b6389,
+    type: 3}
+  m_PrefabInstance: {fileID: 1922331610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1959182291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959182292}
+  m_Layer: 0
+  m_Name: groundDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959182292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959182291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.07471, y: 0.07471, z: 0.07471}
+  m_Children: []
+  m_Father: {fileID: 719111869}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984208302 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
@@ -2836,11 +3107,16 @@ MonoBehaviour:
   animator: {fileID: 1984208304}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  groundDetection: {fileID: 1216740062}
+  groundDetectionDistance: 0.25
   player: {fileID: 0}
   target: {fileID: 0}
+  isFlipped: 0
+  facingRightNum: -1
   maxDistance: 1
   minDistance: 1
   attackRange: 0.95
+  losDistance: 3
   attackDelay: 2
 --- !u!95 &1984208304
 Animator:

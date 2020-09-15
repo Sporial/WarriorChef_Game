@@ -2126,6 +2126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -3851,6 +3856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -5704,6 +5714,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -5793,6 +5808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -7691,6 +7711,7 @@ MonoBehaviour:
   baseHealth: 3
   maxHealth: 3
   currentHealth: 3
+  curLevelUnlocked: 0
   speed: 4
   jumpStrength: 5
   groundCheck: {fileID: 1908591771}
@@ -9184,6 +9205,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -10493,6 +10519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
@@ -12737,6 +12768,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}
       propertyPath: m_IsActive
@@ -13690,6 +13726,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prawn_bull
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228631536453139529, guid: f2c9f8e586870f34db0a3385056b6389,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 178029031974529853, guid: f2c9f8e586870f34db0a3385056b6389,
         type: 3}

@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 5234752589902001051}
   m_Layer: 8
   m_Name: ForestTile_Cooking
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
