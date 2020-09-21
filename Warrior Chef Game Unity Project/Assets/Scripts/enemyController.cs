@@ -24,7 +24,7 @@ public class enemyController : MonoBehaviour
 
     public Transform groundDetection;
     private Vector3 groundDirection;
-    public float groundDetectionDistance;
+    public float groundDetectionDistance = 0.25f;
 
     //all to for finding the player and moving/attacking toward them
     public playerController player;
@@ -37,7 +37,7 @@ public class enemyController : MonoBehaviour
     public float minDistance = 1f;
     public float attackRange = 1f;
 
-    public float losDistance;
+    public float losDistance = 3f;
     private int patrolWait;
     
 
