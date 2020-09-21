@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 8142452710939478794}
   m_Layer: 8
   m_Name: CityTile_Cooking
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ Transform:
   m_GameObject: {fileID: 6094979601980619495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.61, y: 0.23, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4724036942995333248}
   - {fileID: 1784911298777623086}

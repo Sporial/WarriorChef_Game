@@ -74,6 +74,8 @@ public class playerController : MonoBehaviour
     void Update()
     {
         meatStockCounter.SetMeatStock(meatStock);
+        hearts.SetHealth(currentHealth);
+        
 
         if (Input.GetMouseButtonDown(0))
        {

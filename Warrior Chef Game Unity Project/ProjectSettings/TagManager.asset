@@ -7,6 +7,8 @@ TagManager:
   - Manager
   - Spawn
   - Death
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -75,6 +75,6 @@ public class SaveController : MonoBehaviour
         pCon.meatStock = data.meatStock;
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;
-        pCon.curLevelUnlocked = data.mapLevel;      
+        pCon.curLevelUnlocked = data.mapLevel;
     }
 }

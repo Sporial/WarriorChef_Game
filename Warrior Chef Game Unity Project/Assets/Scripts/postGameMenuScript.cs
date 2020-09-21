@@ -5,21 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class postGameMenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public playerController player;
     void Start()
     {
         
     }
 
-    public void LoadMenu()
-    {
-        //needs to be fixed to account for more levels - worsk for prototype
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
-
     public void ReplayLevel()
     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        player.deathMenuUI.SetActive(false);
+        player.currentHealth = player.maxHealth;
+        Time.timeScale = 1f;
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }

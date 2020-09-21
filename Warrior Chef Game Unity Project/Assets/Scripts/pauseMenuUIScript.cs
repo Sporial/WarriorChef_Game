@@ -8,6 +8,7 @@ public class pauseMenuUIScript : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public playerController player;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,9 @@ public class pauseMenuUIScript : MonoBehaviour
     public void LoadMenu()
     {
         //needs to be fixed to account for more levels - worsk for prototype
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        player.deathMenuUI.SetActive(false);
+        player.currentHealth = player.maxHealth;
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene(0);
