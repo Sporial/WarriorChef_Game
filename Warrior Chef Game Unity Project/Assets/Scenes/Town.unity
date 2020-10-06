@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 1145061115}
   - component: {fileID: 1145061114}
   m_Layer: 0
-  m_Name: New Sprite (2)
+  m_Name: Adventure Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 998
   m_Sprite: {fileID: 21300000, guid: a1f28ac81daf34b42b47128ee27e55d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 1672704777}
   - component: {fileID: 1672704776}
   m_Layer: 0
-  m_Name: New Sprite (3)
+  m_Name: Cook Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 466
   m_Sprite: {fileID: 21300000, guid: 86483ac2ab6a5b947b7930842f71d916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

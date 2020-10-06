@@ -8,7 +8,7 @@ public class playerController : MonoBehaviour
     //multiple health variables for base health and maintaining additional upgrade health
     public int baseHealth = 3;
     static public int upgradeHealth = 0;
-    public int maxHealth;
+    public int maxHealth =3;
     public int currentHealth;
     public int curLevelUnlocked=0;
 
@@ -58,14 +58,14 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       hearts = GameObject.Find("Hearts").GetComponent<healthScript>();
+       hearts = GameObject.Find("HealthBar").GetComponent<healthScript>();
        meatStockCounter = GameObject.Find("MeatStock Counter").GetComponent<meatStockUI>();
 
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-        UpdateHealth();
+        //UpdateHealth();
         currentHealth = maxHealth;
-        hearts.SetMaxHealth(maxHealth);
+        //hearts.SetMaxHealth(maxHealth);
         //meatStockCounter.SetMeatStock(meatStock);
         deathMenuUI.SetActive(false);
     }
@@ -75,7 +75,6 @@ public class playerController : MonoBehaviour
     {
         meatStockCounter.SetMeatStock(meatStock);
         hearts.SetHealth(currentHealth);
-        
 
         if (Input.GetMouseButtonDown(0))
        {
@@ -167,7 +166,7 @@ public class playerController : MonoBehaviour
         LoseMeatStock();
 
         currentHealth ++;
-        
+        ResetHP();
         hearts.SetHealth(currentHealth);
     }
 
@@ -179,6 +178,8 @@ public class playerController : MonoBehaviour
     public void UpdateHealth()
     {
         maxHealth = baseHealth + upgradeHealth;
+        hearts.SetMaxHealth(maxHealth);
+        currentHealth = maxHealth;
     }
 
     public void UpgradeHealthBy(int upgrade)
@@ -201,5 +202,12 @@ public class playerController : MonoBehaviour
             //Destroy(gameObject); 
         }
     }
-
+    public void yeetemboi()
+    {
+        TakeDamage(1);
+    }
+    public void ResetHP()
+    {
+        hearts.ResetHealth();
+    }
 }

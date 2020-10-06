@@ -231,10 +231,14 @@ public class cookingMinigameController : MonoBehaviour
     public void ContinueMenu()
     {
         player.UpgradeHealthBy(healthUpCount);
+        healthUpCount = 0;
+        player.ResetHP();
         weapon.UpgradeDamageBy(damageUpCount);
         //postGameMenu.SetActive(true);
         upgradeMenu.SetActive(false);
         cookingMinigame.SetActive(false);
         isCooking = false;
+        GameObject.Find("Adventure Button").GetComponent<BoxCollider2D>().enabled = true;
+        GameObject.Find("Cook Button").GetComponent<BoxCollider2D>().enabled = true;
     }
 }

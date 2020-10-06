@@ -76,5 +76,8 @@ public class SaveController : MonoBehaviour
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;
         pCon.curLevelUnlocked = data.mapLevel;
+
+        healthScript hScript = GameObject.Find("HealthBar").GetComponent<healthScript>();
+        hScript.SetMaxHealth(data.maxHealth);
     }
 }

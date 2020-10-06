@@ -7,6 +7,6 @@ public class TOWNToMapButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(2);
+            GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(2);
     }
 }
