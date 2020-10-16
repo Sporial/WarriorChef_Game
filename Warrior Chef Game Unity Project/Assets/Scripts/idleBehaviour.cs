@@ -6,13 +6,21 @@ public class idleBehaviour : StateMachineBehaviour
 {
     private int waitTime;
     enemyController enemy;
+    //public bool startRoof;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         enemy = animator.GetComponent<enemyController>();
-        enemy.RunIdleWait();
-        enemy.RunFlipWait();
+        if (enemy.startOnRoof == false)
+        {
+            enemy.RunIdleWait();
+            enemy.RunFlipWait();
+        }
+        else
+        {
+            enemy.SetGravity(-1f);
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
