@@ -25,6 +25,7 @@ public class enemyController : MonoBehaviour
     public Transform groundDetection;
     private Vector3 groundDirection;
     public float groundDetectionDistance = 0.25f;
+    public bool isTouchingGround;
 
     //all to for finding the player and moving/attacking toward them
     public playerController player;
@@ -39,6 +40,13 @@ public class enemyController : MonoBehaviour
 
     public float losDistance = 3f;
     private int patrolWait;
+
+    public bool isFlyer;
+    public bool canLookDown;
+    public bool startOnRoof;
+    public bool isFrog;
+    public float jumpStrength = 1;
+    //public float jumpWait = 1f;
     
 
     //allows for attack cooldowns, basically so they can't spam their attacks
@@ -71,6 +79,8 @@ public class enemyController : MonoBehaviour
         }
 
         //they ray cast to detect if the player is within line of sight of the enemy
+        if (canLookDown == false)
+        {
         RaycastHit2D losInfo = Physics2D.Raycast(transform.position + dropPos, transform.right * facingRightNum, losDistance);
         if (losInfo.collider !=null)
         {
@@ -91,15 +101,47 @@ public class enemyController : MonoBehaviour
         {
             Debug.DrawLine(transform.position + dropPos, transform.position + dropPos + transform.right * losDistance * facingRightNum, Color.green);
         }
+        }
+        else
+        {
+            RaycastHit2D losInfo = Physics2D.Raycast(transform.position, transform.up * -1, losDistance);
+        if (losInfo.collider !=null)
+        {
+            
+
+            if (losInfo.collider.CompareTag("Player"))
+            {
+                Debug.DrawLine(transform.position, losInfo.point, Color.red);
+                animator.SetBool("isAlerted", true);
+            }
+            else
+            {
+                Debug.DrawLine(transform.position, losInfo.point, Color.blue);
+            }
+
+        }
+        else
+        {
+            Debug.DrawLine(transform.position, transform.position + transform.up * losDistance * -1, Color.green);
+        }
+        }
 
         //rays to detect whether there is ground to walk on, and if there is an enemy or wall in fron of them *make sure to tage tiles "Ground" and enemies "Enemy"
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, transform.up * -1, groundDetectionDistance);
         Debug.DrawLine(groundDetection.position, groundDetection.position + transform.up * -1 * groundDetectionDistance, Color.yellow);
         RaycastHit2D infrontInfo = Physics2D.Raycast(groundDetection.position + transform.up * 0.3f, transform.up * 0.3f + transform.right * facingRightNum, groundDetectionDistance * 2f);
         Debug.DrawLine(groundDetection.position + transform.up * 0.3f, groundDetection.position + transform.up * 0.3f + transform.right * facingRightNum * groundDetectionDistance * 2f, Color.yellow);
-        if (groundInfo.collider == false)
+        if (groundInfo.collider == false && isFlyer == false && isFrog == false)
         {
             Flip();
+        }
+        if (groundInfo.collider == false)
+        {
+            isTouchingGround = false;
+        }
+        else
+        {
+            isTouchingGround = true;
         }
         if (infrontInfo.collider != null)
         {
@@ -122,7 +164,7 @@ public class enemyController : MonoBehaviour
             //animator.SetFloat("Speed", Mathf.Abs(currentSpeed * Time.deltaTime));
          //}    
             //attack toward player every so often
-            if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive)
+            if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive && isTouchingGround)
             {  
                 Attack();
                 attackCooldown = attackDelay;
@@ -201,6 +243,10 @@ public class enemyController : MonoBehaviour
     {
         StartCoroutine(FlipWait());
     }
+    //public void RunJumpWait()
+    //{
+    //    StartCoroutine(JumpWait());
+    //}
 
     //these are basically just a random duration for the AI to perform each of their behaviours.
     IEnumerator PatrolWait()
@@ -213,13 +259,38 @@ public class enemyController : MonoBehaviour
     {
         patrolWait = Random.Range(2,5);
         yield return new WaitForSeconds(patrolWait);
+        if (isFrog == false)
+        {
         animator.SetBool("Idle", false);
+        }
+        else
+        {
+            Jump();
+        }
     }
     IEnumerator FlipWait()
     {
         patrolWait = Random.Range(2,15);
         yield return new WaitForSeconds(patrolWait);
         Flip();
+    }
+    //IEnumerator JumpWait()
+    //{
+    //    yield return new WaitForSeconds(jumpWait);
+    //    Jump();
+    //}
+
+    public void SetGravity(float gravityNum)
+    {
+        rb.gravityScale = gravityNum;
+    }
+
+
+    public void Jump()
+    {
+        animator.SetTrigger("Jump");
+        rb.velocity = (Vector2.up + (Vector2.right * facingRightNum)) * jumpStrength;
+        
     }
 
     //what to do when I take damage

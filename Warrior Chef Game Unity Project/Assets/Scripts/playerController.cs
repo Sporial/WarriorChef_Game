@@ -40,6 +40,9 @@ public class playerController : MonoBehaviour
     public int meatStock = 0;
     public int upgradeToken = 0;
 
+    public float timer = 0.0f;
+    public float heavyHoldTiming = 1.0f;
+
     private bool facingRight = true;
 
     private void Awake()
@@ -76,9 +79,24 @@ public class playerController : MonoBehaviour
         meatStockCounter.SetMeatStock(meatStock);
         hearts.SetHealth(currentHealth);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
        {
-           Attack();
+            timer += Time.deltaTime;
+       }
+       if (Input.GetMouseButtonUp(0) && timer <= heavyHoldTiming)
+        {
+            Attack();
+            timer = 0.0f;
+        }
+        else if (Input.GetMouseButtonUp(0) && timer > heavyHoldTiming)
+        {
+            HeavyAttack();
+            timer = 0.0f;
+        }
+       
+       if (Input.GetMouseButtonDown(1))
+       {
+           LiftAttack();
        }
 
        //detects whether the player is touching the ground, if they are, they have their double jump refreshed
@@ -139,6 +157,14 @@ public class playerController : MonoBehaviour
    {
        animator.SetTrigger("Attack");
    }
+   public void HeavyAttack()
+   {
+       animator.SetTrigger("HeavyAttack");
+   }
+    public void LiftAttack()
+    {
+        animator.SetTrigger("LiftAttack");
+    }
 
    public void Jump()
    {

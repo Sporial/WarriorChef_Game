@@ -7,6 +7,7 @@ public class followBehaviour : StateMachineBehaviour
     private Transform playerPos;
     public float speed;
     enemyController enemy;
+    //public bool isFlyer;
     //this is a statemachine that is attached to the enraged animation - it now handles movement toward the player.
 
 
@@ -15,6 +16,10 @@ public class followBehaviour : StateMachineBehaviour
     {
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
         enemy = animator.GetComponent<enemyController>();
+        if (enemy.isFlyer == true)
+        {
+            enemy.SetGravity(0f);
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -22,7 +27,14 @@ public class followBehaviour : StateMachineBehaviour
     {
         enemy.LookAtPlayer();
 
+        if (enemy.isFrog == false)
+        {
         animator.transform.position = Vector2.MoveTowards(animator.transform.position, playerPos.position, speed * Time.deltaTime);
+        }
+        else if (enemy.isTouchingGround == true)
+        {
+            enemy.Jump();
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
