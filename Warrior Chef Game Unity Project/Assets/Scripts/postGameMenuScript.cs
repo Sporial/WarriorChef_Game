@@ -6,16 +6,15 @@ using UnityEngine.SceneManagement;
 public class postGameMenuScript : MonoBehaviour
 {
     public playerController player;
-    void Start()
-    {
-        
-    }
+    public SaveController saveCont;
 
     public void ReplayLevel()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
+        saveCont = GameObject.FindGameObjectWithTag("Manager").GetComponent<SaveController>();
         player.deathMenuUI.SetActive(false);
         player.currentHealth = player.maxHealth;
+        player.meatStock = saveCont.startMeat;
         player.ResetHP();
         Time.timeScale = 1f;
         Debug.Log(SceneManager.GetActiveScene().buildIndex);

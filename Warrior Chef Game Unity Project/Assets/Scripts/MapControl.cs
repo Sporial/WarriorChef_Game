@@ -60,6 +60,7 @@ public class MapControl : MonoBehaviour
     public void Level3Button()
     {
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(5);
+        playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
     }
 
 }

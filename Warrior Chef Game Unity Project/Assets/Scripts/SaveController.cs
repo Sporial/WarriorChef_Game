@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SaveController : MonoBehaviour
 {
     GameObject player;
+    public int startMeat;
+    public GameObject saveText;
     public void NewGame()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<playerController>().ResetHP();
+        player.GetComponent<playerController>().meatStock = 0;
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
+
         
     }
 
@@ -28,12 +35,15 @@ public class SaveController : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody2D>().angularVelocity = 0;
 
+        //I'm like 99.99% sure I can combine all of these into 1 if statement, but I dont want to risk it in case stuff messes up
+
         if (SceneManager.GetActiveScene().buildIndex == 1)
             //Level 1
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
             playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+            startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 4)
@@ -42,6 +52,7 @@ public class SaveController : MonoBehaviour
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
             playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+            startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
         if (SceneManager.GetActiveScene().buildIndex == 5)
         //Level3
@@ -49,6 +60,7 @@ public class SaveController : MonoBehaviour
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
             playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+            startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 3)
@@ -64,6 +76,13 @@ public class SaveController : MonoBehaviour
     {
         GameObject pCon = GameObject.FindGameObjectWithTag("Player");
         SaveSystem.SavePlayer(pCon.GetComponent<playerController>());
+        StartCoroutine(ShowSaveText());
+    }
+    public IEnumerator ShowSaveText()
+    {
+        saveText.SetActive(true);
+        yield return new WaitForSeconds(2);
+        saveText.SetActive(false);
     }
 
     public void LoadPlayer()
@@ -76,6 +95,7 @@ public class SaveController : MonoBehaviour
         pCon.upgradeToken = data.upgradeToken;
         pCon.maxHealth = data.maxHealth;
         pCon.curLevelUnlocked = data.mapLevel;
+        pCon.ResetHP();
 
         healthScript hScript = GameObject.Find("HealthBar").GetComponent<healthScript>();
         hScript.SetMaxHealth(data.maxHealth);
