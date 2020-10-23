@@ -113,6 +113,7 @@ public class enemyController : MonoBehaviour
             {
                 Debug.DrawLine(transform.position, losInfo.point, Color.red);
                 animator.SetBool("isAlerted", true);
+                animator.SetTrigger("Dive");
             }
             else
             {
@@ -165,6 +166,11 @@ public class enemyController : MonoBehaviour
          //}    
             //attack toward player every so often
             if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive && isTouchingGround)
+            {  
+                Attack();
+                attackCooldown = attackDelay;
+            }
+            else if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive && isFlyer)
             {  
                 Attack();
                 attackCooldown = attackDelay;
@@ -303,6 +309,7 @@ public class enemyController : MonoBehaviour
             //tell player to get meatstock
             //FindObjectOfType<playerController>().GainMeatStock(); -depreciated, now drops meat which when touched does the same thing.
             animator.SetTrigger("Death");
+            SetGravity(1f);
             alive = false;
             //waits to die, no longer alive, so only death aniamtion plays until destroyed
             StartCoroutine(DeathWait());
@@ -310,6 +317,10 @@ public class enemyController : MonoBehaviour
         //allows the player to 'stun' the enemy, returns to normal behaviour after DamagedWait()
         currentSpeed = 0f;
         animator.SetTrigger("Damaged");
+        if (isFlyer == false)
+        {
+        rb.velocity = (Vector2.up + (Vector2.right * facingRightNum * -2 ));
+        }
         StartCoroutine(DamagedWait());
     }
 }

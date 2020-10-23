@@ -97,6 +97,7 @@ public class playerController : MonoBehaviour
        if (Input.GetMouseButtonDown(1))
        {
            LiftAttack();
+           rb.velocity = Vector2.up * jumpStrength;
        }
 
        //detects whether the player is touching the ground, if they are, they have their double jump refreshed
@@ -170,6 +171,16 @@ public class playerController : MonoBehaviour
    {
        rb.velocity = Vector2.up * jumpStrength;
        animator.SetTrigger("Jump");
+   }
+
+   public void LiftGravity()
+   {
+       rb.gravityScale = 0;
+   }
+
+   public void ResetGravity()
+   {
+       rb.gravityScale = 1;
    }
 
     //all updates to UI and/or storing new values
