@@ -101,8 +101,8 @@ MonoBehaviour:
   - {fileID: 7801336390035112078}
   - {fileID: 5841858117443467876}
   m_Bounds:
-    m_Center: {x: 0.003127098, y: 0.0033545494, z: 0}
-    m_Extent: {x: 3.7618709, y: 3.6783552, z: 0}
+    m_Center: {x: 0.0031385422, y: 0.0033545494, z: 0}
+    m_Extent: {x: 3.7618785, y: 3.6783552, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1208361036635837338
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8129788148707267622}
   m_Bounds:
-    m_Center: {x: 0.006586075, y: -0.006635189, z: 0}
+    m_Center: {x: 0.0065898895, y: -0.006635189, z: 0}
     m_Extent: {x: 1.24341, y: 2.2683647, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -528,8 +528,8 @@ MonoBehaviour:
   - {fileID: 5841858117443467876}
   - {fileID: 425766661884766580}
   m_Bounds:
-    m_Center: {x: 0.00032806396, y: 0.00001692772, z: 0}
-    m_Extent: {x: 2.5261178, y: 2.2661304, z: 0}
+    m_Center: {x: 0.00032615662, y: 0.00001692772, z: 0}
+    m_Extent: {x: 2.526116, y: 2.2661304, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &6298632094436007607
@@ -666,13 +666,13 @@ MonoBehaviour:
   facingRightNum: -1
   maxDistance: 1
   minDistance: 1
-  attackRange: 1
+  attackRange: 0.65
   losDistance: 3
   isFlyer: 1
   canLookDown: 1
   startOnRoof: 1
   isFrog: 0
-  jumpStrength: 1
+  jumpStrength: 0
   attackDelay: 2
 --- !u!1 &6697559346205074623
 GameObject:
@@ -774,8 +774,8 @@ MonoBehaviour:
   - {fileID: 3847480935661390973}
   - {fileID: 699731680435414700}
   m_Bounds:
-    m_Center: {x: -0.009330273, y: 0.003869772, z: 0}
-    m_Extent: {x: 5.065666, y: 3.6530104, z: 0}
+    m_Center: {x: -0.009326458, y: 0.003869772, z: 0}
+    m_Extent: {x: 5.065674, y: 3.6530104, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7018702925532952619
