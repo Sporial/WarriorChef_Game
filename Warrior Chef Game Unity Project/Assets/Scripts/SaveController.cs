@@ -9,6 +9,7 @@ public class SaveController : MonoBehaviour
     GameObject player;
     public int startMeat;
     public GameObject saveText;
+    public Camera mainCam;
     public void NewGame()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -34,6 +35,8 @@ public class SaveController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        mainCam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        mainCam.enabled = true;
 
         //I'm like 99.99% sure I can combine all of these into 1 if statement, but I dont want to risk it in case stuff messes up
 

@@ -27,7 +27,7 @@ public class playerController : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private float moveInput;
+    public float moveInput;
 
     public meatStockUI meatStockCounter;
 
