@@ -14,6 +14,7 @@ public class idleBehaviour : StateMachineBehaviour
         enemy = animator.GetComponent<enemyController>();
         if (enemy.startOnRoof == false)
         {
+            enemy.SetGravity(1f);
             enemy.RunIdleWait();
             enemy.RunFlipWait();
         }

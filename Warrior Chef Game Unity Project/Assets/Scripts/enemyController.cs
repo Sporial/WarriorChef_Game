@@ -205,8 +205,8 @@ public class enemyController : MonoBehaviour
         transform.localScale = Scaler;
     }
 
-     public void Attack()
-   {
+    public void Attack()
+    {
        currentSpeed = 0f;
        animator.SetTrigger("Attack");
        if(Vector3.Distance(transform.position, target.position) < attackRange)
@@ -215,12 +215,12 @@ public class enemyController : MonoBehaviour
        }
        StartCoroutine(AttackWait());
        
-   }
+    }
 
     //all for waiting between other events
     IEnumerator AttackWait()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.1f);
         currentSpeed = baseSpeed;
     }
     
