@@ -17,7 +17,7 @@ public class playerController : MonoBehaviour
     public float jumpStrength = 1;
 
     //all for checking if the player is on the ground eg. double jump status or airial attack status
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -122,7 +122,7 @@ public class playerController : MonoBehaviour
             ConsumeMeatStock();
         }
 
-        if(Input.GetKey(KeyCode.S) && isGrounded == true)
+        if(Input.GetButton("SButton") && isGrounded == true)
         {
             isCrouching = true;
             Crouch();

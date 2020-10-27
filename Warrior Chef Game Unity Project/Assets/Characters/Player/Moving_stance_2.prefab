@@ -962,7 +962,7 @@ Transform:
   - {fileID: 8086648006661838607}
   - {fileID: 7275959157944904745}
   - {fileID: 7059090522850966937}
-  - {fileID: 6280464712566046905}
+  - {fileID: 6759325318110460812}
   - {fileID: 6280464710938096802}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1601,11 +1601,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6280464712566046789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.786465, z: -120.30075}
-  m_LocalScale: {x: 10.437533, y: 10.437533, z: 10.437533}
+  m_LocalPosition: {x: 0.012149811, y: 0.6637001, z: -10}
+  m_LocalScale: {x: 0.86762, y: 0.86762, z: 0.86762}
   m_Children: []
-  m_Father: {fileID: 6347626984639093421}
-  m_RootOrder: 16
+  m_Father: {fileID: 6759325318110460812}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6280464712566046790
 Camera:
@@ -2064,6 +2064,53 @@ MonoBehaviour:
     m_Extent: {x: 0.79819, y: 0.3939498, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
+--- !u!1 &8259015767203817479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6759325318110460812}
+  - component: {fileID: 7358796796498605798}
+  m_Layer: 0
+  m_Name: CameraScroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6759325318110460812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259015767203817479}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.14616314, y: 5.802103, z: 0}
+  m_LocalScale: {x: 12.030075, y: 12.030075, z: 12.030075}
+  m_Children:
+  - {fileID: 6280464712566046905}
+  m_Father: {fileID: 6347626984639093421}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7358796796498605798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259015767203817479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65cbed8252b1804d88e265609d07827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 6280464712566046790}
+  player: {fileID: 6347626984639093421}
+  threshold: 1
 --- !u!1 &8372303662903623501
 GameObject:
   m_ObjectHideFlags: 0
