@@ -32,6 +32,7 @@ public class playerController : MonoBehaviour
     public meatStockUI meatStockCounter;
 
     public Animator animator;
+    bool isCrouching = false;
 
     public healthScript hearts;
 
@@ -120,6 +121,17 @@ public class playerController : MonoBehaviour
         {
             ConsumeMeatStock();
         }
+
+        if(Input.GetKey(KeyCode.S) && isGrounded == true)
+        {
+            isCrouching = true;
+            Crouch();
+        }
+        else
+        {
+            isCrouching = false;
+            Crouch();
+        }
        
     }
 
@@ -155,13 +167,13 @@ public class playerController : MonoBehaviour
     }
 
     public void Attack()
-   {
+    {
        animator.SetTrigger("Attack");
-   }
-   public void HeavyAttack()
-   {
+    }
+    public void HeavyAttack()
+    {
        animator.SetTrigger("HeavyAttack");
-   }
+    }
     public void LiftAttack()
     {
         animator.SetTrigger("LiftAttack");
@@ -171,6 +183,23 @@ public class playerController : MonoBehaviour
    {
        rb.velocity = Vector2.up * jumpStrength;
        animator.SetTrigger("Jump");
+   }
+
+   public void Crouch()
+   {
+       if (isCrouching == true)
+        {
+            animator.SetBool("isCrouching", true);
+        }
+       else
+       {
+           animator.SetBool("isCrouching", false);
+       }
+   }
+
+   public void KnockedBackPlayer(int knockBackDir, float strength)
+   {
+       rb.velocity = (Vector2.right * knockBackDir) * strength;
    }
 
    public void LiftGravity()
