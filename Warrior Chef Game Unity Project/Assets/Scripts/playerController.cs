@@ -239,10 +239,6 @@ public class playerController : MonoBehaviour
             //Destroy(gameObject); 
         }
     }
-    public void yeetemboi()
-    {
-        TakeDamage(1);
-    }
     public void ResetHP()
     {
         hearts.ResetHealth();
