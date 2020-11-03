@@ -37,6 +37,7 @@ public class SaveController : MonoBehaviour
         player.GetComponent<Rigidbody2D>().angularVelocity = 0;
         mainCam = GameObject.Find("Main Camera").GetComponent<Camera>();
         mainCam.enabled = true;
+        //player.GetComponent<playerController>().pSys.Stop();
 
         //I'm like 99.99% sure I can combine all of these into 1 if statement, but I dont want to risk it in case stuff messes up
 

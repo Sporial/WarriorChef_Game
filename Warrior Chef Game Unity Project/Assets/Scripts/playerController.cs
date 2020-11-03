@@ -46,6 +46,9 @@ public class playerController : MonoBehaviour
 
     private bool facingRight = true;
 
+    //trail FX for sword
+    //public ParticleSystem pSys;
+
     private void Awake()
     {
         if(instance == null)
@@ -62,6 +65,7 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //pSys.Stop();
        hearts = GameObject.Find("HealthBar").GetComponent<healthScript>();
        meatStockCounter = GameObject.Find("MeatStock Counter").GetComponent<meatStockUI>();
 
@@ -169,7 +173,15 @@ public class playerController : MonoBehaviour
     public void Attack()
     {
        animator.SetTrigger("Attack");
+       // pSys.Play();
+        //StartCoroutine(StopParticle());
     }
+
+    //public IEnumerator StopParticle()
+   // {
+    //    yield return new WaitForSeconds(1);
+    //    pSys.Stop();
+    //}
     public void HeavyAttack()
     {
        animator.SetTrigger("HeavyAttack");
