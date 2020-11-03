@@ -12,6 +12,7 @@ public class bossAttackBehaviour : StateMachineBehaviour
     {
      boss = animator.GetComponent<bossController>();
      atkNum = animator.GetInteger("attackNum");
+     boss.isAttacking = true;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

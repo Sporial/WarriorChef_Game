@@ -14,6 +14,7 @@ public class bossFollowBehaviour : StateMachineBehaviour
        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
        rb = animator.GetComponent<Rigidbody2D>();
        boss = animator.GetComponent<bossController>();
+       boss.isAttacking = false;
 
     }
 

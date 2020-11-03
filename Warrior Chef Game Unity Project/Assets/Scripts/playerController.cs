@@ -84,7 +84,7 @@ public class playerController : MonoBehaviour
         meatStockCounter.SetMeatStock(meatStock);
         hearts.SetHealth(currentHealth);
 
-        if (Input.GetMouseButton(0))
+       /* if (Input.GetMouseButton(0))
        {
             timer += Time.deltaTime;
        }
@@ -104,7 +104,19 @@ public class playerController : MonoBehaviour
            LiftAttack();
            rb.velocity = Vector2.up * jumpStrength;
        }
-
+        */
+        if (Input.GetMouseButtonDown(0) && isGrounded == true)
+        {
+            Attack();
+        }
+        if (Input.GetMouseButtonDown(0) && isGrounded == false)
+        {
+            LiftAttack();
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            HeavyAttack();
+        }
        //detects whether the player is touching the ground, if they are, they have their double jump refreshed
        if(isGrounded == true)
         {
@@ -146,19 +158,29 @@ public class playerController : MonoBehaviour
 
         //controls player movements and movement animations
         moveInput = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if(isCrouching == false)
+        {
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         
+        Vector2 cursorPos = Camera.main.ScreenToWorldPoint( new Vector2(Input.mousePosition.x,  Input.mousePosition.y));
+        Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
+
+        if ((facingRight == true && cursorPos.x < myPos.x) || (facingRight == false && cursorPos.x > myPos.x))
+        {
+            Flip();
+        }
         
         //flips player based on direction of movement
-        if(facingRight == false && moveInput > 0)
+        /*if(facingRight == false && moveInput > 0)
         {
             Flip();
         }
         else if (facingRight == true && moveInput < 0)
         {
             Flip();
-        }
+        }*/
         
     }
     void Flip()
@@ -284,4 +306,5 @@ public class playerController : MonoBehaviour
     {
         hearts.ResetHealth();
     }
+    
 }

@@ -22,19 +22,23 @@ public class bossController : MonoBehaviour
     public playerController player;
     public Transform target;
 
+    private playerController playerHit;
+
     public bool isFlipped = false;
     private bool facingRight = false;
     public int facingRightNum = -1;
 
     public float maxDistance = 1f;
     public float minDistance = 1f;
-    public float attackRange = 10f;
+    //public float attackRange = 10f;
 
     public float jumpStrength = 1;
 
     public float losDistance = 20f;
 
     public int atkNum;
+
+    public bool isAttacking = false;
 
     public float attackDelay = 2f;
     private float attackCooldown;
@@ -124,12 +128,22 @@ public class bossController : MonoBehaviour
        animator.SetTrigger("Attack");
        atkNum = Random.Range(1,6);
        animator.SetInteger("attackNum", atkNum);
-       if(Vector3.Distance(transform.position, target.position) < attackRange)
+       /*if(Vector3.Distance(transform.position, target.position) < attackRange)
        {
            player.TakeDamage(damage);
        }
+       */
        StartCoroutine(AttackWait());
        
+    }
+
+    public void OnCollisionEnter2D(Collider2D hitInfo)
+    {
+        playerController playerHit = hitInfo.GetComponent<playerController>();
+        if (playerHit != null && isAttacking == true)
+        {
+            playerHit.TakeDamage(damage);
+        }
     }
 
     IEnumerator AttackWait()
@@ -194,6 +208,7 @@ public class bossController : MonoBehaviour
         if (health <= 10 && alive)
         {
             animator.SetBool("isEnraged", true);
+            damage += 1;
         }
 
         if (health <= 0 && alive)
@@ -209,6 +224,7 @@ public class bossController : MonoBehaviour
         //allows the player to 'stun' the enemy, returns to normal behaviour after DamagedWait()
         currentSpeed = 0f;
         animator.SetTrigger("Damaged");
+        isAttacking = false;
         rb.velocity = (Vector2.up + (Vector2.right * facingRightNum * -2 ));
         StartCoroutine(DamagedWait());
     }

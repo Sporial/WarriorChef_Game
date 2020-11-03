@@ -7731,6 +7731,7 @@ MonoBehaviour:
   curLevelUnlocked: 0
   speed: 4
   jumpStrength: 5
+  isGrounded: 0
   groundCheck: {fileID: 1908591771}
   checkRadius: 0.02
   whatIsGround:
