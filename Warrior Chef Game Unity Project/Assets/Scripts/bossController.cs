@@ -94,10 +94,15 @@ public class bossController : MonoBehaviour
         }
 
         if (Vector3.Distance(transform.position, target.position) <= maxDistance && attackCooldown <= 0f && alive)
-            {  
+        {  
                 Attack();
                 attackCooldown = attackDelay;
-            }
+        }
+        else if (Vector3.Distance(transform.position, target.position) >= (maxDistance * 1.5f) && attackCooldown <= 0f && alive)
+        {  
+                animator.SetTrigger("Roll");
+                attackCooldown = attackDelay;
+        }
     }
 
     public void LookAtPlayer()
