@@ -234,6 +234,7 @@ public class cookingMinigameController : MonoBehaviour
         healthUpCount = 0;
         player.ResetHP();
         weapon.UpgradeDamageBy(damageUpCount);
+        damageUpCount = 0;
         //postGameMenu.SetActive(true);
         upgradeMenu.SetActive(false);
         cookingMinigame.SetActive(false);

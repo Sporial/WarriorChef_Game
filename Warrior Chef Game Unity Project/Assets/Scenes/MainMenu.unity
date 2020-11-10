@@ -3607,9 +3607,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.51
-  m_Text: "A/D \t\t\t\t\t\t\t\tLeft/Right\nW\t\t\t\t\t\t\t\t\t    Jump\nF\t\t\t\t\t\t\t\t\t  
-    Consume Meatstock to heal\nLMB\t\t                       Attack\nC\t\t\t\t\t\t\t\t\t  
-    Cook Meatstock in cooking phase"
+  m_Text: "A/D \t\t\t\t\t\t\t\tLeft/Right\nW\t\t\t\t\t\t\t\t\tJump\nS\t\t\t\t\t\t\t\t\t  
+    Crouch (look around with mouse)\nF\t\t\t\t\t\t\t\t\t   Consume Meatstock to heal\nLMB\t\t                      
+    Attack\nC\t\t\t\t\t\t\t\t\t   Cook Meatstock in cooking phase"
 --- !u!222 &749979615
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11547,7 +11547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -84.5}
+  m_AnchoredPosition: {x: 0, y: -125.8}
   m_SizeDelta: {x: 148.81, y: 25.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128377986
