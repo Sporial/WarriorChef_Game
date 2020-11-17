@@ -9,6 +9,7 @@ public class mainMenuScript : MonoBehaviour
     public GameObject optionsMenu;
     public GameObject controlsMenu;
     public GameObject confirmationMenu;
+    public AudioSource clickSound;
 
     void Start()
     {
@@ -27,16 +28,22 @@ public class mainMenuScript : MonoBehaviour
 
     public void Options()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         optionsMenu.SetActive(true);
     }
 
     public void Controls()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         controlsMenu.SetActive(true);
     }
 
     public void Return()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         optionsMenu.SetActive(false);
         controlsMenu.SetActive(false);
         confirmationMenu.SetActive(false);
@@ -44,6 +51,8 @@ public class mainMenuScript : MonoBehaviour
 
     public void ConfirmQuit()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         //Quits the application, also prints 'Quit' so you can tell while editing
         Debug.Log("Quit.");
         Application.Quit();
@@ -54,6 +63,8 @@ public class mainMenuScript : MonoBehaviour
 
     public void QuitGame()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         confirmationMenu.SetActive(true);
     }
 }

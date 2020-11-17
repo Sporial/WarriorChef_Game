@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MapControl : MonoBehaviour
 {
+    public AudioSource clickSound;
 
     public void Start()
     {
+        clickSound = GameObject.Find("SceneManager").GetComponent<AudioSource>();
         playerController pCon = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         CheckLevelUnlocked(pCon.curLevelUnlocked);
     }
@@ -40,6 +42,7 @@ public class MapControl : MonoBehaviour
 
     public void TownButton()
     {
+        clickSound.Play();
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         if(player.curLevelUnlocked!=1 && player.curLevelUnlocked < 2) { player.curLevelUnlocked = 1; }
@@ -48,10 +51,12 @@ public class MapControl : MonoBehaviour
 
     public void Level1Button()
     {
+        clickSound.Play();
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
     }
     public void Level2Button()
     {
+        clickSound.Play();
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(4);
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         player.curLevelUnlocked = 2;
@@ -59,6 +64,7 @@ public class MapControl : MonoBehaviour
 
     public void Level3Button()
     {
+        clickSound.Play();
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(5);
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
     }

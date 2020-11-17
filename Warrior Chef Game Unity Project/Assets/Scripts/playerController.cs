@@ -46,6 +46,10 @@ public class playerController : MonoBehaviour
 
     private bool facingRight = true;
 
+    public AudioSource itemPickup;
+    public AudioSource deathAudio;
+    public AudioSource animalAttack;
+
     //trail FX for sword
     //public ParticleSystem pSys;
 
@@ -65,6 +69,11 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource[] audios = GetComponents<AudioSource>();
+        itemPickup = audios[0];
+        animalAttack = audios[1];
+        deathAudio = audios[2];
+        
         //pSys.Stop();
        hearts = GameObject.Find("HealthBar").GetComponent<healthScript>();
        meatStockCounter = GameObject.Find("MeatStock Counter").GetComponent<meatStockUI>();
@@ -249,8 +258,8 @@ public class playerController : MonoBehaviour
     //all updates to UI and/or storing new values
     public void GainMeatStock()
     {
+        itemPickup.Play();
         meatStock ++;
-
         meatStockCounter.SetMeatStock(meatStock);
     }
 
@@ -296,6 +305,7 @@ public class playerController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            deathAudio.Play();
             //pauses game and activates failstate/death ui
             deathMenuUI.SetActive(true);
             Time.timeScale = 0f;

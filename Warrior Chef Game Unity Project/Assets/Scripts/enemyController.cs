@@ -207,6 +207,7 @@ public class enemyController : MonoBehaviour
 
     public void Attack()
     {
+        GameObject.Find("Moving_stance_2").GetComponent<playerController>().animalAttack.Play();
        currentSpeed = 0f;
        animator.SetTrigger("Attack");
        if(Vector3.Distance(transform.position, target.position) < attackRange)

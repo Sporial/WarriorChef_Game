@@ -10,8 +10,11 @@ public class SaveController : MonoBehaviour
     public int startMeat;
     public GameObject saveText;
     public Camera mainCam;
+    public AudioSource clickSound;
     public void NewGame()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<playerController>().ResetHP();
         player.GetComponent<playerController>().meatStock = 0;
@@ -91,6 +94,8 @@ public class SaveController : MonoBehaviour
 
     public void LoadPlayer()
     {
+        clickSound = GetComponent<AudioSource>();
+        clickSound.Play();
         PlayerData data = SaveSystem.LoadPlayer();
         playerController pCon = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         GameObject gO = GameObject.FindGameObjectWithTag("Player");
