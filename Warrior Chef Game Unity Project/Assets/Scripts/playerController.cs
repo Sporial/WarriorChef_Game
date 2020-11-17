@@ -173,6 +173,8 @@ public class playerController : MonoBehaviour
         }
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         
+        if (Camera.main != null)
+        {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint( new Vector2(Input.mousePosition.x,  Input.mousePosition.y));
         Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
 
@@ -180,7 +182,7 @@ public class playerController : MonoBehaviour
         {
             Flip();
         }
-        
+        }
         //flips player based on direction of movement
         /*if(facingRight == false && moveInput > 0)
         {

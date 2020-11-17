@@ -1,0 +1,2132 @@
+fileFormatVersion: 2
+guid: ca6a26f5104acfa4abeb7b311c50e0e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 907678348092801339
+    second: stall sprite sheet_0
+  - first:
+      213: -288494274872642197
+    second: stall sprite sheet_1
+  - first:
+      213: 3616195747919920971
+    second: stall sprite sheet_2
+  - first:
+      213: -4581576572865856370
+    second: stall sprite sheet_3
+  - first:
+      213: 554617793891581278
+    second: stall sprite sheet_4
+  - first:
+      213: -1750982878189996523
+    second: stall sprite sheet_5
+  - first:
+      213: 2792092640853122204
+    second: stall sprite sheet_6
+  - first:
+      213: -7601134222185211754
+    second: stall sprite sheet_7
+  - first:
+      213: -272687128758379871
+    second: stall sprite sheet_8
+  - first:
+      213: -6903289899780541656
+    second: stall sprite sheet_9
+  - first:
+      213: -4834080211803958885
+    second: stall sprite sheet_10
+  - first:
+      213: -2086200220161661139
+    second: stall sprite sheet_11
+  - first:
+      213: 7942653498114230476
+    second: stall sprite sheet_12
+  - first:
+      213: 8139490027473892301
+    second: stall sprite sheet_13
+  - first:
+      213: 2798095364824351465
+    second: stall sprite sheet_14
+  - first:
+      213: 3507784707483964447
+    second: stall sprite sheet_15
+  - first:
+      213: 6585133655081055664
+    second: stall sprite sheet_16
+  - first:
+      213: -4044628607256007494
+    second: stall sprite sheet_17
+  - first:
+      213: 2048870196125119681
+    second: stall sprite sheet_18
+  - first:
+      213: -6794119251886730135
+    second: stall sprite sheet_19
+  - first:
+      213: -1559546483643981655
+    second: stall sprite sheet_20
+  - first:
+      213: 4231709215449200085
+    second: stall sprite sheet_21
+  - first:
+      213: 6042394999634793644
+    second: stall sprite sheet_22
+  - first:
+      213: -7803979581902882739
+    second: stall sprite sheet_23
+  - first:
+      213: 921295755178600680
+    second: stall sprite sheet_24
+  - first:
+      213: -3026390172794971962
+    second: stall sprite sheet_25
+  - first:
+      213: 5829624746448716344
+    second: stall sprite sheet_26
+  - first:
+      213: -7725358742564552095
+    second: stall sprite sheet_27
+  - first:
+      213: 4101762917693342915
+    second: stall sprite sheet_28
+  - first:
+      213: 2485658773757602349
+    second: stall sprite sheet_29
+  - first:
+      213: -6869605995297378398
+    second: stall sprite sheet_30
+  - first:
+      213: -5149246212942751526
+    second: stall sprite sheet_31
+  - first:
+      213: -6376129345869096813
+    second: stall sprite sheet_32
+  - first:
+      213: 4215525267218142196
+    second: stall sprite sheet_33
+  - first:
+      213: 6031637881067628999
+    second: stall sprite sheet_34
+  - first:
+      213: -723470970073531569
+    second: stall sprite sheet_35
+  - first:
+      213: 8701374438446125308
+    second: stall sprite sheet_36
+  - first:
+      213: -320801970150544635
+    second: stall sprite sheet_37
+  - first:
+      213: 6478092345638268762
+    second: stall sprite sheet_38
+  - first:
+      213: 1502537900116926166
+    second: stall sprite sheet_39
+  - first:
+      213: 4228702412842807052
+    second: stall sprite sheet_40
+  - first:
+      213: 7206663101859881794
+    second: stall sprite sheet_41
+  - first:
+      213: -1770038868510991611
+    second: stall sprite sheet_42
+  - first:
+      213: 8083847187797570333
+    second: stall sprite sheet_43
+  - first:
+      213: 7809122651881427300
+    second: stall sprite sheet_44
+  - first:
+      213: 1656540203604094642
+    second: stall sprite sheet_45
+  - first:
+      213: 7866396113197328456
+    second: stall sprite sheet_46
+  - first:
+      213: 1545463668489214727
+    second: stall sprite sheet_47
+  - first:
+      213: -7411348726925264222
+    second: stall sprite sheet_48
+  - first:
+      213: 9209937012143028536
+    second: stall sprite sheet_49
+  - first:
+      213: 3468011687968293493
+    second: stall sprite sheet_50
+  - first:
+      213: 7894033976899574388
+    second: stall sprite sheet_51
+  - first:
+      213: -7597442978241860127
+    second: stall sprite sheet_52
+  - first:
+      213: 3766327336772980561
+    second: stall sprite sheet_53
+  - first:
+      213: -961826329535204022
+    second: stall sprite sheet_54
+  - first:
+      213: -5782825760742223579
+    second: stall sprite sheet_55
+  - first:
+      213: -1642324069275196737
+    second: stall sprite sheet_56
+  - first:
+      213: -2011570179852500251
+    second: stall sprite sheet_57
+  - first:
+      213: 8084658679710760051
+    second: stall sprite sheet_58
+  - first:
+      213: -4586762836634473502
+    second: stall sprite sheet_59
+  - first:
+      213: 2844504442936989894
+    second: stall sprite sheet_60
+  - first:
+      213: 2959322658236615340
+    second: stall sprite sheet_61
+  - first:
+      213: 3042054530986749823
+    second: stall sprite sheet_62
+  - first:
+      213: 4834533174158338853
+    second: stall sprite sheet_63
+  - first:
+      213: 9122813455187733752
+    second: stall sprite sheet_64
+  - first:
+      213: 3196868627351439484
+    second: stall sprite sheet_65
+  - first:
+      213: -8801936424000310399
+    second: stall sprite sheet_66
+  - first:
+      213: 5189269734056531165
+    second: stall sprite sheet_67
+  - first:
+      213: 13512779909318881
+    second: stall sprite sheet_68
+  - first:
+      213: 4735379046356997298
+    second: stall sprite sheet_69
+  - first:
+      213: -1720621678307168147
+    second: stall sprite sheet_70
+  - first:
+      213: -7695524053843642059
+    second: stall sprite sheet_71
+  - first:
+      213: 5706624677997321902
+    second: stall sprite sheet_72
+  - first:
+      213: -2911131558972292411
+    second: stall sprite sheet_73
+  - first:
+      213: -7464509926292473568
+    second: stall sprite sheet_74
+  - first:
+      213: -3061540856343558778
+    second: stall sprite sheet_75
+  - first:
+      213: 4295156896078226593
+    second: stall sprite sheet_76
+  - first:
+      213: 1963385020812694783
+    second: stall sprite sheet_77
+  - first:
+      213: 5255721975903796037
+    second: stall sprite sheet_78
+  - first:
+      213: -77569371774438794
+    second: stall sprite sheet_79
+  - first:
+      213: 8781923903329383947
+    second: stall sprite sheet_80
+  - first:
+      213: 2990749815451101862
+    second: stall sprite sheet_81
+  - first:
+      213: -395235709841259689
+    second: stall sprite sheet_82
+  - first:
+      213: -2232781217318192044
+    second: stall sprite sheet_83
+  - first:
+      213: -5318214898597993267
+    second: stall sprite sheet_84
+  - first:
+      213: 8773010483692929876
+    second: stall sprite sheet_85
+  - first:
+      213: -7361493962152976877
+    second: stall sprite sheet_86
+  - first:
+      213: 6747052836184163845
+    second: stall sprite sheet_87
+  - first:
+      213: -1928646460044563710
+    second: stall sprite sheet_88
+  - first:
+      213: 6978060540424250693
+    second: stall sprite sheet_89
+  - first:
+      213: -4729175311976586549
+    second: stall sprite sheet_90
+  - first:
+      213: -7830002140278323496
+    second: stall sprite sheet_91
+  - first:
+      213: 7307900260428523569
+    second: stall sprite sheet_92
+  - first:
+      213: 6631580050964734305
+    second: stall sprite sheet_93
+  - first:
+      213: 605929445837195563
+    second: stall sprite sheet_94
+  - first:
+      213: -5782416246875922172
+    second: stall sprite sheet_95
+  - first:
+      213: 3571089856844903875
+    second: stall sprite sheet_96
+  - first:
+      213: -8724345006616244010
+    second: stall sprite sheet_97
+  - first:
+      213: 1149281050137556638
+    second: stall sprite sheet_98
+  - first:
+      213: 1291472383371744963
+    second: stall sprite sheet_99
+  - first:
+      213: 7077552459771600739
+    second: stall sprite sheet_100
+  - first:
+      213: -2826222347780294888
+    second: stall sprite sheet_101
+  - first:
+      213: -650819241628096375
+    second: stall sprite sheet_102
+  - first:
+      213: 4387986663879459327
+    second: stall sprite sheet_103
+  - first:
+      213: -7261680838264755760
+    second: stall sprite sheet_104
+  - first:
+      213: 6881055828795723275
+    second: stall sprite sheet_105
+  - first:
+      213: -6183011050713706299
+    second: stall sprite sheet_106
+  - first:
+      213: -5790464535041504514
+    second: stall sprite sheet_107
+  - first:
+      213: 2131050236026560202
+    second: stall sprite sheet_108
+  - first:
+      213: -1092308940608009632
+    second: stall sprite sheet_109
+  - first:
+      213: 3389776520954375087
+    second: stall sprite sheet_110
+  - first:
+      213: 4209772384098949787
+    second: stall sprite sheet_111
+  - first:
+      213: -1319476044316769685
+    second: stall sprite sheet_112
+  - first:
+      213: 5825938623217745612
+    second: stall sprite sheet_113
+  - first:
+      213: -9181357929835700704
+    second: stall sprite sheet_114
+  - first:
+      213: -737405975584442654
+    second: stall sprite sheet_115
+  - first:
+      213: 4630151602724700589
+    second: stall sprite sheet_116
+  - first:
+      213: 170736377895306600
+    second: stall sprite sheet_117
+  - first:
+      213: -6991140783427892676
+    second: stall sprite sheet_118
+  - first:
+      213: 8900889276338825516
+    second: stall sprite sheet_119
+  - first:
+      213: -3373289825042024843
+    second: stall sprite sheet_120
+  - first:
+      213: 7080402085598761047
+    second: stall sprite sheet_121
+  - first:
+      213: -7190184242490226277
+    second: stall sprite sheet_122
+  - first:
+      213: -798764053833815569
+    second: stall sprite sheet_123
+  - first:
+      213: 1025256546346627686
+    second: stall sprite sheet_124
+  - first:
+      213: -2895186374988209316
+    second: stall sprite sheet_125
+  - first:
+      213: 6303076289802771501
+    second: stall sprite sheet_126
+  - first:
+      213: 1973154786774514770
+    second: stall sprite sheet_127
+  - first:
+      213: -1364254622380240402
+    second: stall sprite sheet_128
+  - first:
+      213: 8432951458700208446
+    second: stall sprite sheet_129
+  - first:
+      213: 4359923141865685545
+    second: stall sprite sheet_130
+  - first:
+      213: -3211724454337160242
+    second: stall sprite sheet_131
+  - first:
+      213: -8373075165395356876
+    second: stall sprite sheet_132
+  - first:
+      213: -4733660444274648087
+    second: stall sprite sheet_133
+  - first:
+      213: 711317600881304351
+    second: stall sprite sheet_134
+  - first:
+      213: -6730942735970873338
+    second: stall sprite sheet_135
+  - first:
+      213: -720634802709524867
+    second: stall sprite sheet_136
+  - first:
+      213: 2754727815549329768
+    second: stall sprite sheet_137
+  - first:
+      213: 4867529850886674710
+    second: stall sprite sheet_138
+  - first:
+      213: -7516675952769218443
+    second: stall sprite sheet_139
+  - first:
+      213: 8320630116852485298
+    second: stall sprite sheet_140
+  - first:
+      213: 2908856704830649317
+    second: stall sprite sheet_141
+  - first:
+      213: 5392650763822711732
+    second: stall sprite sheet_142
+  - first:
+      213: 5444668901126670728
+    second: stall sprite sheet_143
+  - first:
+      213: -2862426034268377951
+    second: stall sprite sheet_144
+  - first:
+      213: 3104469641261180724
+    second: stall sprite sheet_145
+  - first:
+      213: 8946259422393899193
+    second: stall sprite sheet_146
+  - first:
+      213: -1589651193298683203
+    second: stall sprite sheet_147
+  - first:
+      213: 476397157872584074
+    second: stall sprite sheet_148
+  - first:
+      213: -8201078213610286946
+    second: stall sprite sheet_149
+  - first:
+      213: -8173639319307922239
+    second: stall sprite sheet_150
+  - first:
+      213: -11006539717732376
+    second: stall sprite sheet_151
+  - first:
+      213: -7907770934771197893
+    second: stall sprite sheet_152
+  - first:
+      213: -6902133960634547867
+    second: stall sprite sheet_153
+  - first:
+      213: -5962474839841905372
+    second: stall sprite sheet_154
+  - first:
+      213: -6975878699121315587
+    second: stall sprite sheet_155
+  - first:
+      213: -5159243432474579282
+    second: stall sprite sheet_156
+  - first:
+      213: -8172848019550590416
+    second: stall sprite sheet_157
+  - first:
+      213: -8105940185354454808
+    second: stall sprite sheet_158
+  - first:
+      213: 554713724320512398
+    second: stall sprite sheet_159
+  - first:
+      213: -4908723211864216077
+    second: stall sprite sheet_160
+  - first:
+      213: 7305275119199023700
+    second: stall sprite sheet_161
+  - first:
+      213: -1192033976704730602
+    second: stall sprite sheet_162
+  - first:
+      213: -7765863954623058729
+    second: stall sprite sheet_163
+  - first:
+      213: -6368923011661411736
+    second: stall sprite sheet_164
+  - first:
+      213: -7319241996589174052
+    second: stall sprite sheet_165
+  - first:
+      213: 4849902726277595022
+    second: stall sprite sheet_166
+  - first:
+      213: 8442750862976457284
+    second: stall sprite sheet_167
+  - first:
+      213: 9099916801266930634
+    second: stall sprite sheet_168
+  - first:
+      213: 4237881624032891801
+    second: stall sprite sheet_169
+  - first:
+      213: -962426670277205461
+    second: stall sprite sheet_170
+  - first:
+      213: 4839872366869556520
+    second: stall sprite sheet_171
+  - first:
+      213: 211937927455054703
+    second: stall sprite sheet_172
+  - first:
+      213: -4867364813101420431
+    second: stall sprite sheet_173
+  - first:
+      213: 5536061368511047784
+    second: stall sprite sheet_174
+  - first:
+      213: 6066098433699397839
+    second: stall sprite sheet_175
+  - first:
+      213: 1580627995561767991
+    second: stall sprite sheet_176
+  - first:
+      213: -108441144893735756
+    second: stall sprite sheet_177
+  - first:
+      213: 5152183917221699792
+    second: stall sprite sheet_178
+  - first:
+      213: 2967700035883369546
+    second: stall sprite sheet_179
+  - first:
+      213: -8729870338239498166
+    second: stall sprite sheet_180
+  - first:
+      213: 5313398378456367098
+    second: stall sprite sheet_181
+  - first:
+      213: -4329130247711221243
+    second: stall sprite sheet_182
+  - first:
+      213: -2052606076345167363
+    second: stall sprite sheet_183
+  - first:
+      213: 8187335457063193168
+    second: stall sprite sheet_184
+  - first:
+      213: 8167977197004834222
+    second: stall sprite sheet_185
+  - first:
+      213: 7280759805438965314
+    second: stall sprite sheet_186
+  - first:
+      213: -7878688184561806877
+    second: stall sprite sheet_187
+  - first:
+      213: 8585560599886901081
+    second: stall sprite sheet_188
+  - first:
+      213: -8504797091333530369
+    second: stall sprite sheet_189
+  - first:
+      213: 2147513325926186959
+    second: stall sprite sheet_190
+  - first:
+      213: -813893789672554990
+    second: stall sprite sheet_191
+  - first:
+      213: -6617425280548189047
+    second: stall sprite sheet_192
+  - first:
+      213: -5803190789674357849
+    second: stall sprite sheet_193
+  - first:
+      213: 2586062630375764723
+    second: stall sprite sheet_194
+  - first:
+      213: -3905048097829608171
+    second: stall sprite sheet_195
+  - first:
+      213: 5451703219541828484
+    second: stall sprite sheet_196
+  - first:
+      213: -3846832937134161628
+    second: stall sprite sheet_197
+  - first:
+      213: 8937029339001376200
+    second: stall sprite sheet_198
+  - first:
+      213: 2904152424442335097
+    second: stall sprite sheet_199
+  - first:
+      213: 5939903961493013356
+    second: stall sprite sheet_200
+  - first:
+      213: 592921703991135835
+    second: stall sprite sheet_201
+  - first:
+      213: 2068506846101276218
+    second: stall sprite sheet_202
+  - first:
+      213: 1618575297330093667
+    second: stall sprite sheet_203
+  - first:
+      213: -7629242317735768890
+    second: stall sprite sheet_204
+  - first:
+      213: -4592982478338817633
+    second: stall sprite sheet_205
+  - first:
+      213: 4651063549503435079
+    second: stall sprite sheet_206
+  - first:
+      213: -5636649314130659546
+    second: stall sprite sheet_207
+  - first:
+      213: -4326036168214171111
+    second: stall sprite sheet_208
+  - first:
+      213: 89285460465337454
+    second: stall sprite sheet_209
+  - first:
+      213: -7209895987113636937
+    second: stall sprite sheet_210
+  - first:
+      213: 5496547655379549590
+    second: stall sprite sheet_211
+  - first:
+      213: 8875882381335347513
+    second: stall sprite sheet_212
+  - first:
+      213: -8240181685187519269
+    second: stall sprite sheet_213
+  - first:
+      213: -293834691069765866
+    second: stall sprite sheet_214
+  - first:
+      213: 6329884950390676587
+    second: stall sprite sheet_215
+  - first:
+      213: -3855794701559434405
+    second: stall sprite sheet_216
+  - first:
+      213: 5698034082978910847
+    second: stall sprite sheet_217
+  - first:
+      213: 6295649146875885460
+    second: stall sprite sheet_218
+  - first:
+      213: -959406401419008999
+    second: stall sprite sheet_219
+  - first:
+      213: -2559822465761822049
+    second: stall sprite sheet_220
+  - first:
+      213: 8256711533988481847
+    second: stall sprite sheet_221
+  - first:
+      213: 6379882371734024804
+    second: stall sprite sheet_222
+  - first:
+      213: -8132283805916691348
+    second: stall sprite sheet_223
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stall sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5316
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31826406a8b89c00800000000000000
+      internalID: 907678348092801339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 5316
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b657b7a4cff0ffbf0800000000000000
+      internalID: -288494274872642197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 5316
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f7b019fde4f2230800000000000000
+      internalID: 3616195747919920971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 5316
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c34179168fa60c0800000000000000
+      internalID: -4581576572865856370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 5316
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5db40fe1f562b700800000000000000
+      internalID: 554617793891581278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4873
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516b1b1795243b7e0800000000000000
+      internalID: -1750982878189996523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 4873
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c5806b6718fb620800000000000000
+      internalID: 2792092640853122204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 4873
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698d59c82b8538690800000000000000
+      internalID: -7601134222185211754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 4873
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa198b4088373cf0800000000000000
+      internalID: -272687128758379871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 4873
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823f90e49669230a0800000000000000
+      internalID: -6903289899780541656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4430
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b911eafc8a5e9ecb0800000000000000
+      internalID: -4834080211803958885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 4430
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d272ce2f3f35c03e0800000000000000
+      internalID: -2086200220161661139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 4430
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8cc194649f93e60800000000000000
+      internalID: 7942653498114230476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 4430
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc37a6c1e0745f070800000000000000
+      internalID: 8139490027473892301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 4430
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2c50cc8e4d4d620800000000000000
+      internalID: 2798095364824351465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3987
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14112e3b972ea030800000000000000
+      internalID: 3507784707483964447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3987
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b573957b28136b50800000000000000
+      internalID: 6585133655081055664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3987
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc6f1806b79ed7c0800000000000000
+      internalID: -4044628607256007494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 3987
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c43ce6869c0f6c10800000000000000
+      internalID: 2048870196125119681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3987
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96416a5898076b1a0800000000000000
+      internalID: -6794119251886730135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3544
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0e0b76cb06b5ae0800000000000000
+      internalID: -1559546483643981655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3544
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b8936c1d0aba30800000000000000
+      internalID: 4231709215449200085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3544
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca414d9fc36ead350800000000000000
+      internalID: 6042394999634793644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 3544
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48f642eae1b2b390800000000000000
+      internalID: -7803979581902882739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3544
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8ee7cab9919cc00800000000000000
+      internalID: 921295755178600680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3101
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c892de1c2a1006d0800000000000000
+      internalID: -3026390172794971962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3101
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83207e9f1dcf6e050800000000000000
+      internalID: 5829624746448716344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3101
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1624bf287230ac490800000000000000
+      internalID: -7725358742564552095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 3101
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c44bfd34a36ce830800000000000000
+      internalID: 4101762917693342915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3101
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa7a23c75de7220800000000000000
+      internalID: 2485658773757602349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2658
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afe7677eb14aa0a0800000000000000
+      internalID: -6869605995297378398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2658
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad89588e9d33a88b0800000000000000
+      internalID: -5149246212942751526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2658
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398578164207387a0800000000000000
+      internalID: -6376129345869096813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2658
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3983e45ed808a30800000000000000
+      internalID: 4215525267218142196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2658
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c963d222bea4b350800000000000000
+      internalID: 6031637881067628999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2215
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bb57f5cf6b5f5f0800000000000000
+      internalID: -723470970073531569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2215
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0de3d23fd71c870800000000000000
+      internalID: 8701374438446125308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2215
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b6eedce484c8bf0800000000000000
+      internalID: -320801970150544635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2215
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f22fb7aaec6e950800000000000000
+      internalID: 6478092345638268762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2215
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ded70662461ad410800000000000000
+      internalID: 1502537900116926166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1772
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f255a907e5faa30800000000000000
+      internalID: 4228702412842807052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1772
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243e54a98e5330460800000000000000
+      internalID: 7206663101859881794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1772
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b94c3f60f8f67e0800000000000000
+      internalID: -1770038868510991611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1772
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13f63fef289f2070800000000000000
+      internalID: 8083847187797570333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1772
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46159d86da39f5c60800000000000000
+      internalID: 7809122651881427300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1329
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bea9f7d9863df610800000000000000
+      internalID: 1656540203604094642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_46
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1329
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848e3a5469d0b2d60800000000000000
+      internalID: 7866396113197328456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_47
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1329
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b529da407927510800000000000000
+      internalID: 1545463668489214727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1329
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa73119999952990800000000000000
+      internalID: -7411348726925264222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1329
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839f18c8ae440df70800000000000000
+      internalID: 9209937012143028536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 886
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572c042814ad02030800000000000000
+      internalID: 3468011687968293493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_51
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 886
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a96fdd31e3d8d60800000000000000
+      internalID: 7894033976899574388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_52
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 886
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edab904dd5709690800000000000000
+      internalID: -7597442978241860127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 886
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f423802cea44430800000000000000
+      internalID: 3766327336772980561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 886
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45bf6c9c08e6a2f0800000000000000
+      internalID: -961826329535204022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5215bfcfb964fbfa0800000000000000
+      internalID: -5782825760742223579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_56
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 443
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb227ccd5fa4539e0800000000000000
+      internalID: -1642324069275196737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_57
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 443
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e28f1544977514e0800000000000000
+      internalID: -2011570179852500251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 443
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c307e1c3a723070800000000000000
+      internalID: 8084658679710760051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 443
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb6075708b8850c0800000000000000
+      internalID: -4586762836634473502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8974358b5b97720800000000000000
+      internalID: 2844504442936989894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_61
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa45fb4740a11920800000000000000
+      internalID: 2959322658236615340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_62
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f25da7a7c873a20800000000000000
+      internalID: 3042054530986749823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stall sprite sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 475
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bac84be46b71340800000000000000
+      internalID: 4834533174158338853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
