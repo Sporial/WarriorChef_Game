@@ -131,12 +131,12 @@ public class playerController : MonoBehaviour
         {
             extraJumps = extraJumpsValue;
         }
-        if(Input.GetKeyDown(KeyCode.W) && extraJumps > 0)
+        if((Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.Space))) && extraJumps > 0)
         {
             Jump();
             extraJumps--;
         }
-        else if(Input.GetKeyDown(KeyCode.W) && extraJumps == 0 && isGrounded == true)
+        else if((Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.Space))) && extraJumps == 0 && isGrounded == true)
         {
             Jump();
         }
