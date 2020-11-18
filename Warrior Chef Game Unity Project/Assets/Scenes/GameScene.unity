@@ -3244,6 +3244,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -4571,6 +4572,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -5199,6 +5201,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -6193,6 +6196,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -7909,6 +7913,9 @@ MonoBehaviour:
   upgradeToken: 0
   timer: 0
   heavyHoldTiming: 1
+  itemPickup: {fileID: 0}
+  deathAudio: {fileID: 0}
+  animalAttack: {fileID: 0}
 --- !u!95 &954192300
 Animator:
   serializedVersion: 3
@@ -8533,6 +8540,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -9600,6 +9608,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0
@@ -13900,6 +13909,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.95
   losDistance: 3
+  isVariant: 0
   isFlyer: 0
   canLookDown: 0
   startOnRoof: 0

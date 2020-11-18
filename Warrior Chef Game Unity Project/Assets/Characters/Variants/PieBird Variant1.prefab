@@ -302,6 +302,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 1
   losDistance: 3
+  isVariant: 1
   isFlyer: 1
   canLookDown: 0
   startOnRoof: 0

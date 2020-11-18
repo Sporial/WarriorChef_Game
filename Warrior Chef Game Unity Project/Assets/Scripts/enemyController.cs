@@ -41,6 +41,7 @@ public class enemyController : MonoBehaviour
     public float losDistance = 3f;
     private int patrolWait;
 
+    public bool isVariant;
     public bool isFlyer;
     public bool canLookDown;
     public bool startOnRoof;
