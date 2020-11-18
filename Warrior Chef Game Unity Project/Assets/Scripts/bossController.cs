@@ -6,7 +6,7 @@ public class bossController : MonoBehaviour
 {
     public int health = 50;
 
-    public int damage = 1;
+    public int bossDamage = 1;
     
     private bool alive;
     public float baseSpeed = 1f;
@@ -133,6 +133,7 @@ public class bossController : MonoBehaviour
     {
        currentSpeed = 0f;
        animator.SetTrigger("Attack");
+       isAttacking = true;
        atkNum = Random.Range(1,6);
        animator.SetInteger("attackNum", atkNum);
        /*if(Vector3.Distance(transform.position, target.position) < attackRange)
@@ -149,7 +150,7 @@ public class bossController : MonoBehaviour
         playerController playerHit = hitInfo.GetComponent<playerController>();
         if (playerHit != null && isAttacking == true)
         {
-            playerHit.TakeDamage(damage);
+            playerHit.TakeDamage(bossDamage);
         }
     }
 
@@ -223,7 +224,7 @@ public class bossController : MonoBehaviour
         if (health <= 10 && alive)
         {
             animator.SetBool("isEnraged", true);
-            damage += 1;
+            bossDamage += 1;
         }
 
         if (health <= 0 && alive)

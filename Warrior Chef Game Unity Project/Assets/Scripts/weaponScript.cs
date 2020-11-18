@@ -30,12 +30,12 @@ public class weaponScript : MonoBehaviour
      void OnTriggerEnter2D(Collider2D hitInfo)
      {
          enemyController enemy = hitInfo.GetComponent<enemyController>();
+         bossController boss = hitInfo.GetComponent<bossController>();
         if (enemy != null)
         {
             enemy.TakeDamage(totalDamage);
         }
-        bossController boss = hitInfo.GetComponent<bossController>();
-        if (boss != null)
+        else if (boss != null)
         {
             boss.TakeDamage(totalDamage);
         }
