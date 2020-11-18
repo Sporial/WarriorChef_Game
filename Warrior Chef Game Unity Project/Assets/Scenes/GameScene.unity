@@ -3233,6 +3233,7 @@ MonoBehaviour:
   animator: {fileID: 327217658}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 593642921}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -4561,6 +4562,8 @@ MonoBehaviour:
   animator: {fileID: 568565345}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 1746651391219653574, guid: d59902c5b9858a74a9d7c8f779e6e16c,
+    type: 3}
   groundDetection: {fileID: 112897787}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -5190,6 +5193,7 @@ MonoBehaviour:
   animator: {fileID: 644781162}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 1816752026}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -6185,6 +6189,7 @@ MonoBehaviour:
   animator: {fileID: 776898899}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 852212079}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -8529,6 +8534,7 @@ MonoBehaviour:
   animator: {fileID: 1067146610}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 91991161}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -9597,6 +9603,7 @@ MonoBehaviour:
   animator: {fileID: 1293907749}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 1812265327}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -11989,7 +11996,7 @@ PrefabInstance:
     - target: {fileID: -8124497586700175419, guid: 3d028fde605b6a9458f7d5754ac2e68c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3
+      value: -4.07
       objectReference: {fileID: 0}
     - target: {fileID: -8124497586700175419, guid: 3d028fde605b6a9458f7d5754ac2e68c,
         type: 3}
@@ -13898,6 +13905,7 @@ MonoBehaviour:
   animator: {fileID: 1984208304}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 0}
   groundDetection: {fileID: 1850418734}
   groundDetectionDistance: 0.25
   isTouchingGround: 0
@@ -14635,6 +14643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PieBird Variant1
       objectReference: {fileID: 0}
+    - target: {fileID: 2735253292465937761, guid: faa4c0c094fd11c4f8c0915d4cd271e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5208850999100928672, guid: faa4c0c094fd11c4f8c0915d4cd271e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14870,6 +14883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PieBirdVariant2
       objectReference: {fileID: 0}
+    - target: {fileID: 394310991160242014, guid: fc9da6f1201e04447b6309f1c927a3df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3907842071415916321, guid: fc9da6f1201e04447b6309f1c927a3df,
         type: 3}
       propertyPath: player
@@ -15098,6 +15116,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull_Variant2
       objectReference: {fileID: 0}
+    - target: {fileID: 7053717749839867880, guid: ef41d7962602d194ca72abb9faf47294,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef41d7962602d194ca72abb9faf47294, type: 3}
 --- !u!1001 &6764771869047087469
@@ -15186,6 +15209,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prawn_bull_Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1331003229971715547, guid: 3e8efead718e2574993ed71b9bc46aa8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1765375923466170821, guid: 3e8efead718e2574993ed71b9bc46aa8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15264,6 +15292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Frog Burger Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169100203139500196, guid: 6d15b81f01be43943ad7475d657f6e3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7967381553299371921, guid: 6d15b81f01be43943ad7475d657f6e3e,
         type: 3}
@@ -15414,10 +15447,5 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 954192303}
-    - target: {fileID: 9006040161150565306, guid: 8e35224e599f67141ac47539177eaceb,
-        type: 3}
-      propertyPath: startOnRoof
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e35224e599f67141ac47539177eaceb, type: 3}

@@ -22,6 +22,8 @@ public class enemyController : MonoBehaviour
     public GameObject meatDrop;
     private Vector3 dropPos;
 
+    public GameObject corpsePrefab;
+
     public Transform groundDetection;
     private Vector3 groundDirection;
     public float groundDetectionDistance = 0.25f;
@@ -70,6 +72,11 @@ public class enemyController : MonoBehaviour
         dropPos = new Vector3(0f, 0.7f, 0f);
         //groundDetection = new Vector3(-0.25f, 0.1f, 0f);
         groundDirection = new Vector3(-0.25f, 0f, 0f);
+
+        if (isVariant == true)
+        {
+            animator.SetBool("isVariant", true);
+        }
     }
 
     void FixedUpdate()
@@ -235,6 +242,10 @@ public class enemyController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        if (corpsePrefab != null)
+        {
+            Instantiate(corpsePrefab,transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
     

@@ -126,6 +126,8 @@ MonoBehaviour:
   animator: {fileID: 3872295976853072107}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 178456716213190398, guid: 952696d194189fc4c91d76c26d923b55,
+    type: 3}
   groundDetection: {fileID: 3872295977744340185}
   groundDetectionDistance: 0
   isTouchingGround: 0
@@ -137,6 +139,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 1
   losDistance: 3
+  isVariant: 0
   isFlyer: 1
   canLookDown: 0
   startOnRoof: 0
@@ -273,8 +276,8 @@ MonoBehaviour:
   - {fileID: 7181592414747318548}
   - {fileID: 6015366693097419649}
   m_Bounds:
-    m_Center: {x: -0.00032949448, y: 0.0015648603, z: 0}
-    m_Extent: {x: 3.3869596, y: 1.6167232, z: 0}
+    m_Center: {x: -0.00032949448, y: 0.0015953779, z: 0}
+    m_Extent: {x: 3.3869598, y: 1.6167556, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2249851618243766607
@@ -474,7 +477,7 @@ MonoBehaviour:
   - {fileID: 157580080425242334}
   m_Bounds:
     m_Center: {x: 0.001964569, y: 0, z: 0}
-    m_Extent: {x: 4.5969653, y: 2.2450001, z: 0}
+    m_Extent: {x: 4.596965, y: 2.2450001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2764716341980971884
@@ -697,7 +700,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 3661606792414619066}
   m_Bounds:
-    m_Center: {x: -0.0020751953, y: -0.0000038146973, z: 0}
+    m_Center: {x: -0.00207448, y: 0, z: 0}
     m_Extent: {x: 3.5829258, y: 2.7550013, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -832,8 +835,8 @@ MonoBehaviour:
   - {fileID: 8746876415347904086}
   - {fileID: 449044957281459651}
   m_Bounds:
-    m_Center: {x: -0.0038007498, y: -0.0023497343, z: 0}
-    m_Extent: {x: 1.8412002, y: 1.1176503, z: 0}
+    m_Center: {x: -0.0038007498, y: -0.0022886992, z: 0}
+    m_Extent: {x: 1.8412, y: 1.1176503, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &8925610555550924327
@@ -936,8 +939,8 @@ MonoBehaviour:
   - {fileID: 7905983992961854483}
   - {fileID: 1976046329654573594}
   m_Bounds:
-    m_Center: {x: 0.0028243065, y: -0.0042215586, z: 0}
-    m_Extent: {x: 4.8988247, y: 1.42078, z: 0}
+    m_Center: {x: 0.0028247833, y: -0.004219651, z: 0}
+    m_Extent: {x: 4.898825, y: 1.42078, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &9108992706473622338

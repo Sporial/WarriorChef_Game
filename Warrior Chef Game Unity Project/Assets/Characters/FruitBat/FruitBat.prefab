@@ -657,6 +657,8 @@ MonoBehaviour:
   animator: {fileID: 9006040161150565307}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 7573800816113325618, guid: dee2938a60e7df44698effd3a9426c98,
+    type: 3}
   groundDetection: {fileID: 9006040159061840024}
   groundDetectionDistance: 0
   isTouchingGround: 0
@@ -668,6 +670,7 @@ MonoBehaviour:
   minDistance: 1
   attackRange: 0.65
   losDistance: 3
+  isVariant: 0
   isFlyer: 1
   canLookDown: 1
   startOnRoof: 1

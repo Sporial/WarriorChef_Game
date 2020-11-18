@@ -592,6 +592,8 @@ MonoBehaviour:
   animator: {fileID: 7967381553299371922}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 3561692133098650046, guid: 56948abd6f09e0d459b056bd15d051a0,
+    type: 3}
   groundDetection: {fileID: 7967381553601650699}
   groundDetectionDistance: 0.1
   isTouchingGround: 0

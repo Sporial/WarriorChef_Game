@@ -34,5 +34,10 @@ public class weaponScript : MonoBehaviour
         {
             enemy.TakeDamage(totalDamage);
         }
+        bossController boss = hitInfo.GetComponent<bossController>();
+        if (boss != null)
+        {
+            boss.TakeDamage(totalDamage);
+        }
      }
 }

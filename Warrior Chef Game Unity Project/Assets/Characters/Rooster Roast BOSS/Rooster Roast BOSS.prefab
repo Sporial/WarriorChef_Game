@@ -384,6 +384,8 @@ MonoBehaviour:
   animator: {fileID: 6764771868590851584}
   meatDrop: {fileID: 6773793095795523367, guid: 66e14d9f34ee089468083053560ccdf0,
     type: 3}
+  corpsePrefab: {fileID: 983501209593327485, guid: 24e50dee787900641b6d7452b367d11b,
+    type: 3}
   player: {fileID: 0}
   target: {fileID: 1859059911734608297}
   isFlipped: 0

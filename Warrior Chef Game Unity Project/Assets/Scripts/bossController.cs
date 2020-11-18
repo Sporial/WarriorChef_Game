@@ -19,6 +19,8 @@ public class bossController : MonoBehaviour
     public GameObject meatDrop;
     private Vector3 dropPos;
 
+    public GameObject corpsePrefab;
+
     public playerController player;
     public Transform target;
 
@@ -174,6 +176,14 @@ public class bossController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
+        if (corpsePrefab != null)
+        {
+            Instantiate(corpsePrefab,transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
 
