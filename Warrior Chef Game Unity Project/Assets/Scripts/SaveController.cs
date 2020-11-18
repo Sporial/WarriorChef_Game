@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SaveController : MonoBehaviour
 {
-    GameObject player;
+    public GameObject player;
     public int startMeat;
     public GameObject saveText;
     public Camera mainCam;
@@ -19,8 +19,6 @@ public class SaveController : MonoBehaviour
         player.GetComponent<playerController>().ResetHP();
         player.GetComponent<playerController>().meatStock = 0;
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
-
-        
     }
 
     private void OnEnable()
