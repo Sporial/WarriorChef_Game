@@ -10,7 +10,7 @@ public class CookingButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(2);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Map");
 
         //GameObject.Find("PlayerUI");
         //GameObject.Find("PlayerUI").GetComponent<cookingMinigameController>().YesChef();

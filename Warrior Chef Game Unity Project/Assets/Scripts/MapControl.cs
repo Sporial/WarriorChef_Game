@@ -43,7 +43,7 @@ public class MapControl : MonoBehaviour
     public void TownButton()
     {
         clickSound.Play();
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Town");
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         if(player.curLevelUnlocked!=1 && player.curLevelUnlocked < 2) { player.curLevelUnlocked = 1; }
         Debug.Log(player.curLevelUnlocked);
@@ -52,12 +52,12 @@ public class MapControl : MonoBehaviour
     public void Level1Button()
     {
         clickSound.Play();
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Level1");
     }
     public void Level2Button()
     {
         clickSound.Play();
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(4);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Level2");
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
         player.curLevelUnlocked = 2;
     }
@@ -65,7 +65,7 @@ public class MapControl : MonoBehaviour
     public void Level3Button()
     {
         clickSound.Play();
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(5);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Level3");
         playerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>();
     }
 

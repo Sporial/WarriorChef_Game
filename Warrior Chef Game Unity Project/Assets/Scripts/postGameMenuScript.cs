@@ -17,7 +17,6 @@ public class postGameMenuScript : MonoBehaviour
         player.meatStock = saveCont.startMeat;
         player.ResetHP();
         Time.timeScale = 1f;
-        Debug.Log(SceneManager.GetActiveScene().buildIndex);
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(SceneManager.GetActiveScene().name);
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroyOnLoad : MonoBehaviour
+public class DontDestroy : MonoBehaviour
 {
-    static DontDestroyOnLoad instance;
+    static DontDestroy instance;
     //Singleton method
     private void Awake()
     {

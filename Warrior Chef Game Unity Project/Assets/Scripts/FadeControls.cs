@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class FadeControls : MonoBehaviour
 {
     public Animator animator;
-    private int levelToLoad;
+    private string levelToLoad;
 
     private void Update()
     {
         
     }
-    public void FadeToLevel(int levelIndex)
+    public void FadeToLevel(string levelIndex)
     {
         levelToLoad = levelIndex;
         animator.SetTrigger("FadeOut");

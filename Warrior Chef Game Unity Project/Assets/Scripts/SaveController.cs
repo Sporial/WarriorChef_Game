@@ -18,7 +18,7 @@ public class SaveController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<playerController>().ResetHP();
         player.GetComponent<playerController>().meatStock = 0;
-        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
+        GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Level1");
     }
 
     private void OnEnable()
@@ -42,7 +42,7 @@ public class SaveController : MonoBehaviour
 
         //I'm like 99.99% sure I can combine all of these into 1 if statement, but I dont want to risk it in case stuff messes up
 
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().name.Equals("Level1"))
             //Level 1
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -51,7 +51,7 @@ public class SaveController : MonoBehaviour
             startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 4)
+        if (SceneManager.GetActiveScene().name.Equals("Level2"))
         //Level2
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -59,7 +59,7 @@ public class SaveController : MonoBehaviour
             playerTransform.transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
             startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().name.Equals("Level3"))
         //Level3
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -68,7 +68,7 @@ public class SaveController : MonoBehaviour
             startMeat = GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().meatStock;
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().name.Equals("Town"))
         //Town
         {
             Transform playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();

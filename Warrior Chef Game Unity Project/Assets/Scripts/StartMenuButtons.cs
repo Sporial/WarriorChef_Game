@@ -38,7 +38,7 @@ public class StartMenuButtons : MonoBehaviour
         }
         else
         {
-            GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(3);
+            GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel("Town");
         }
 
         
