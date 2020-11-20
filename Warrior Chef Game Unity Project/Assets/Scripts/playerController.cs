@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
@@ -157,7 +158,16 @@ public class playerController : MonoBehaviour
             isCrouching = false;
             Crouch();
         }
-       
+        /*
+        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5)
+         {
+            Transform spawnLocation = GameObject.FindGameObjectWithTag("Spawn").GetComponent<Transform>();
+            if (spawnLocation != null && transform.position.y < -200f)
+            {
+                transform.position = new Vector3(spawnLocation.position.x, spawnLocation.position.y, 0);
+            }
+         }
+       */
     }
 
     void FixedUpdate()

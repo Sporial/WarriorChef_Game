@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3813349237341078718}
   - component: {fileID: 1105444298589379342}
   - component: {fileID: 1105444298589379343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,9 +230,9 @@ GameObject:
   - component: {fileID: 4337700630170644469}
   - component: {fileID: 1218203767077342346}
   - component: {fileID: 1218203767077342347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mid leg_3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,9 +377,9 @@ GameObject:
   - component: {fileID: 3062009047242444562}
   - component: {fileID: 1332969536760260667}
   - component: {fileID: 1332969536760260612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mid leg_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -535,9 +535,9 @@ GameObject:
   - component: {fileID: 6658413349612875630}
   - component: {fileID: 1555929691210165266}
   - component: {fileID: 1555929691210165267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: End tail
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,9 +703,9 @@ GameObject:
   - component: {fileID: 3227569892484178383}
   - component: {fileID: 1652310420398583910}
   - component: {fileID: 1652310420398583911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bottom leg_1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 2416227049139456073}
   m_Layer: 0
   m_Name: Prawn_bull_corpse
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -910,9 +910,9 @@ GameObject:
   - component: {fileID: 5944671665451928059}
   - component: {fileID: 3555487776600391938}
   - component: {fileID: 3555487776600391939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tail
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1075,9 +1075,9 @@ GameObject:
   - component: {fileID: 2841948821383891133}
   - component: {fileID: 4411662934717366326}
   - component: {fileID: 4411662934717366327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bottom leg
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1220,9 +1220,9 @@ GameObject:
   - component: {fileID: 1257655426501687374}
   - component: {fileID: 4835301487509942330}
   - component: {fileID: 4835301487509942331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mid leg_1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1366,9 +1366,9 @@ GameObject:
   - component: {fileID: 2697311781762597597}
   - component: {fileID: 4857886336813469501}
   - component: {fileID: 4857886336813469502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: top leg_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1554,9 +1554,9 @@ GameObject:
   - component: {fileID: 4231421306869729885}
   - component: {fileID: 6010014110971704333}
   - component: {fileID: 6010014110971704334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mid leg
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,9 +1711,9 @@ GameObject:
   - component: {fileID: 1120060865830461676}
   - component: {fileID: 6683668181612586264}
   - component: {fileID: 6683668181612586265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Layer 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1858,9 +1858,9 @@ GameObject:
   - component: {fileID: 6288487859573703511}
   - component: {fileID: 7078706667378442461}
   - component: {fileID: 7078706667378442462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: top leg_1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2031,9 +2031,9 @@ GameObject:
   - component: {fileID: 272136402708279882}
   - component: {fileID: 7392806280505154761}
   - component: {fileID: 7392806280505154762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2273,9 +2273,9 @@ GameObject:
   - component: {fileID: 1859297627049300607}
   - component: {fileID: 7646689500864702027}
   - component: {fileID: 7646689500864702036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: top leg
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2462,9 +2462,9 @@ GameObject:
   - component: {fileID: 1951528558419171148}
   - component: {fileID: 7760164094644415466}
   - component: {fileID: 7760164094644415467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: top leg_3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2618,9 +2618,9 @@ GameObject:
   - component: {fileID: 3927810500627619371}
   - component: {fileID: 7837750091936471718}
   - component: {fileID: 7837750091936471719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2812,9 +2812,9 @@ GameObject:
   - component: {fileID: 5195505016822097199}
   - component: {fileID: 8239238959061642193}
   - component: {fileID: 8239238959061642194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bottom leg_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

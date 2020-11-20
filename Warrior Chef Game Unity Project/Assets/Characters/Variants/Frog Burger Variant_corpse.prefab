@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5674940675500977811}
   - component: {fileID: 3526346059980550912}
   - component: {fileID: 7313837981549696304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left leg foot
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,9 +158,9 @@ GameObject:
   - component: {fileID: 1297144360835137854}
   - component: {fileID: 7138168266214036581}
   - component: {fileID: 8360133969307798568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left leg bottom
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -317,9 +317,9 @@ GameObject:
   - component: {fileID: 8030245146319007252}
   - component: {fileID: 4286138963772065877}
   - component: {fileID: 872295247511232934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right arm
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,9 +461,9 @@ GameObject:
   - component: {fileID: 3177987886321582592}
   - component: {fileID: 2538791513656706112}
   - component: {fileID: 2517626955888214711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right leg foot
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -660,9 +660,9 @@ GameObject:
   - component: {fileID: 6128052933097667654}
   - component: {fileID: 1104832074163162549}
   - component: {fileID: 2316025550272208708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left leg top
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -806,9 +806,9 @@ GameObject:
   - component: {fileID: 2924123350267728136}
   - component: {fileID: 7000081346839444037}
   - component: {fileID: 4368829100317630514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right leg bottom
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -961,9 +961,9 @@ GameObject:
   - component: {fileID: 5563478694623076670}
   - component: {fileID: 3667466042322842602}
   - component: {fileID: 7277706918806737105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right leg top
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1112,9 +1112,9 @@ GameObject:
   - component: {fileID: 7986544416724198012}
   - component: {fileID: 443348451493117900}
   - component: {fileID: 1108867778904425814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left arm
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1259,9 +1259,9 @@ GameObject:
   - component: {fileID: 5475621016856740960}
   - component: {fileID: 1033738669996410063}
   - component: {fileID: 8333239218910983420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

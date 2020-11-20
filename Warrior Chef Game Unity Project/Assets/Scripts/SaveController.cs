@@ -15,9 +15,14 @@ public class SaveController : MonoBehaviour
     {
         clickSound = GetComponent<AudioSource>();
         clickSound.Play();
+        //Debug.Log("Playsound");
         player = GameObject.FindGameObjectWithTag("Player");
+        //Debug.Log("Found Object:" + player);
         player.GetComponent<playerController>().ResetHP();
+        //Debug.Log("Reset" + player + "HP");
         player.GetComponent<playerController>().meatStock = 0;
+        //Debug.Log("set meatstock");
+        //Debug.Log("begin fade to black");
         GameObject.Find("FadeToBlack").GetComponent<FadeControls>().FadeToLevel(1);
 
         
