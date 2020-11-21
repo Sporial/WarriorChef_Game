@@ -184,7 +184,7 @@ public class bossController : MonoBehaviour
         if (corpsePrefab != null)
         {
             GameObject myCorpse = Instantiate(corpsePrefab, transform.position, transform.rotation);
-            if (facingRightNum == -1)
+            if (facingRightNum == 1)
             {
                 Vector3 Scaler = myCorpse.transform.localScale;
                 Scaler.x *= -1;

@@ -3509,7 +3509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.51
-  m_Text: "A/D \t\t\t\t\t\t\t\tLeft/Right\nW/Space\t\t\t\t\t\tJump\nS/Ctrl\t\t\t\t\t\t\t\t\t  
+  m_Text: "A/D \t\t\t\t\t\t\t\tLeft/Right\nW/Space\t\t\t\t\t\tJump\nS/Ctrl\t\t\t\t\t\t  
     Crouch (look around with mouse)\nF\t\t\t\t\t\t\t\t\t   Consume Meatstock to heal\nLMB\t\t                      
     Attack\nRMB\t\t                       Heavy Attack\nC\t\t\t\t\t\t\t\t\t   Cook
     Meatstock in cooking phase"
