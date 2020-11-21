@@ -218,7 +218,7 @@ MonoBehaviour:
   - {fileID: 4451684430842433994, guid: 0f32593cabdbc354ea175cb35bb91394, type: 3}
   - {fileID: 2908769337644343041, guid: ec95ed3d9d9892f4e8d99fe783382ac9, type: 3}
   - {fileID: 4574256901886983101, guid: f91686e9d160efa4a9f8d67624cf16e2, type: 3}
-  cookingPrefab: {fileID: 4992674826081791289, guid: 080fb488b109b334485eb8ef29f7af9c,
+  cookingPrefab: {fileID: 2129711950422828074, guid: c47baffd681e6224b92b41e6a89e3f93,
     type: 3}
 --- !u!4 &73485721
 Transform:
