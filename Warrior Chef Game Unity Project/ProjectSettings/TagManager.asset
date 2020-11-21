@@ -9,6 +9,7 @@ TagManager:
   - Death
   - Ground
   - Enemy
+  - PlayerBody
   layers:
   - Default
   - TransparentFX

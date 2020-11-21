@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        if (GameObject.Find("Moving_stance_2").GetComponent<playerController>().isGrounded && Input.GetButton("SButton"))
+        if (GameObject.Find("Moving_stance_2").GetComponent<playerController>().isGrounded && (Input.GetButton("SButton") || Input.GetKey(KeyCode.LeftControl)))
         {
 
             Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);

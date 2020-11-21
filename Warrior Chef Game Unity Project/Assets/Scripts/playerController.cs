@@ -148,7 +148,7 @@ public class playerController : MonoBehaviour
             ConsumeMeatStock();
         }
 
-        if(Input.GetButton("SButton") && isGrounded == true)
+        if((Input.GetButton("SButton") || Input.GetKey(KeyCode.LeftControl)) && isGrounded == true)
         {
             isCrouching = true;
             Crouch();

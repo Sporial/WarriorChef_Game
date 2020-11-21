@@ -79,7 +79,7 @@ public class bossController : MonoBehaviour
         {
             
 
-            if (losInfo.collider.CompareTag("Player"))
+            if (losInfo.collider.CompareTag("Player") || losInfo.collider.CompareTag("Player"))
             {
                 Debug.DrawLine(transform.position + dropPos, losInfo.point, Color.red);
                 animator.SetBool("isAlerted", true);
@@ -183,7 +183,13 @@ public class bossController : MonoBehaviour
         Instantiate(meatDrop, transform.position + dropPos, transform.rotation);
         if (corpsePrefab != null)
         {
-            Instantiate(corpsePrefab,transform.position, transform.rotation);
+            GameObject myCorpse = Instantiate(corpsePrefab, transform.position, transform.rotation);
+            if (facingRightNum == -1)
+            {
+                Vector3 Scaler = myCorpse.transform.localScale;
+                Scaler.x *= -1;
+                myCorpse.transform.localScale = Scaler;
+            }
         }
         Destroy(gameObject);
     }
