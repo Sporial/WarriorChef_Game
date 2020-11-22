@@ -51,6 +51,8 @@ public class playerController : MonoBehaviour
     public AudioSource deathAudio;
     public AudioSource animalAttack;
 
+    public bool isAttacking = false;
+
     //trail FX for sword
     //public ParticleSystem pSys;
 
@@ -93,6 +95,7 @@ public class playerController : MonoBehaviour
     {
         meatStockCounter.SetMeatStock(meatStock);
         hearts.SetHealth(currentHealth);
+        isAttacking = animator.GetBool("isAttacking");
 
        /* if (Input.GetMouseButton(0))
        {
